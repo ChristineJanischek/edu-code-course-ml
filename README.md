@@ -7,11 +7,12 @@ Dieses Repo nutzt [edu-code-projecttemplate](https://github.com/ChristineJanisch
 
 ```
 edu-code-course-ml/
-├── template/       ← Submodule: edu-code-projecttemplate (Laufzeitumgebung)
-├── aufgaben/       ← ML-Aufgaben für Schüler
-├── loesungen/      ← Musterlösungen
-├── notebooks/      ← Jupyter Notebooks
-├── tests/          ← Tests zu den Aufgaben
+├── template/         ← Submodule: edu-code-projecttemplate (Laufzeitumgebung)
+├── informationen/    ← Hilfsmittel für Schüler (Grundlagen, Cheatsheets, Werkzeuge)
+├── aufgaben/         ← ML-Aufgaben für Schüler
+├── loesungen/        ← Musterlösungen
+├── notebooks/        ← Jupyter Notebooks
+├── tests/            ← Tests zu den Aufgaben
 └── README.md
 ```
 
