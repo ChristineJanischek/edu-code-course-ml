@@ -15,6 +15,7 @@ aufgaben/
 ## Hinweise für Schüler
 
 - Lies jede Aufgabe vollständig, bevor du anfängst
+- Richte dich am Lernhorizont in `../informationen/lehrplan/lernhorizont.md` aus
 - Nutze die Materialien in `../informationen/` als Hilfsmittel
 - Bearbeite die Aufgaben in den Jupyter Notebooks unter `../notebooks/`
 - Überprüfe deine Lösung mit den Tests in `../tests/`

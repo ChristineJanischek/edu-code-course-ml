@@ -9,6 +9,7 @@ Dieses Repo nutzt [edu-code-projecttemplate](https://github.com/ChristineJanisch
 edu-code-course-ml/
 ├── template/         ← Submodule: edu-code-projecttemplate (Laufzeitumgebung)
 ├── informationen/    ← Hilfsmittel für Schüler (Grundlagen, Cheatsheets, Werkzeuge)
+├── informationen/lehrplan/ ← Lernhorizont, Erwartungshorizont, Begrifflichkeiten, Themen
 ├── aufgaben/         ← ML-Aufgaben für Schüler
 ├── loesungen/        ← Musterlösungen
 ├── notebooks/        ← Jupyter Notebooks
@@ -95,6 +96,8 @@ loesungen/         ← Musterlösung hier ablegen
 notebooks/         ← Jupyter Notebook hier speichern
 tests/             ← Tests zur Aufgabe hier ergänzen
 ```
+
+Curriculare Leitdokumente (Lernhorizont) liegen in `informationen/lehrplan/`.
 
 Die **Python-API** (`template/services/python-api/app.py`) kann für ML-Demos direkt erweitert werden.
 

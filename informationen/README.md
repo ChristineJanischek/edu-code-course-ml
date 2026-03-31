@@ -10,6 +10,7 @@ Dieses Verzeichnis enthält alle Lernmaterialien und Hilfsmittel, die Schüler b
 | [python/](python/) | Python-Grundlagen und wichtige Bibliotheken |
 | [werkzeuge/](werkzeuge/) | Anleitungen zu Tools (Jupyter, Git, Docker) |
 | [cheatsheets/](cheatsheets/) | Kurzreferenzen zum schnellen Nachschlagen |
+| [lehrplan/](lehrplan/) | Lernhorizont, Erwartungshorizont, Begrifflichkeiten, Themen |
 
 ---
 
@@ -22,3 +23,8 @@ Dieses Verzeichnis enthält alle Lernmaterialien und Hilfsmittel, die Schüler b
 
 > Schau zuerst in die **Cheatsheets** für einen schnellen Überblick.  
 > Bei tieferem Bedarf findest du ausführliche Erklärungen in **grundlagen/** und **python/**.
+
+## Curriculare Leitdokumente
+
+Der verbindliche Lernhorizont für diesen Kurs liegt in [lehrplan/lernhorizont.md](lehrplan/lernhorizont.md).
+Die PDF-Fassung wird im selben Ordner als `Lernhorizont.pdf` gepflegt.
