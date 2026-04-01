@@ -1,12 +1,30 @@
 # edu-code-course-ml
 Dieses Repo enthält die speziellen Kenntnisse (Aufgaben, Lösungen, Informationen, Tests) und eine vollständige Testumgebung zum besseren Verständnis der Künstlichen Intelligenz und im Speziellen des Machine Learning. Es richtet sich an Schüler und Lehrer mit Interesse an einem praxisnahen Unterricht.
 
+## Neu: Live testbare Anwendung im Hauptrepo
+
+Zusätzlich zum Template gibt es jetzt eine direkt im Hauptrepo ausführbare Docker-Umgebung mit "Hallo Welt" für:
+
+- Java
+- MySQL
+- Python
+- PHP
+- JavaScript
+
+Sie liegt in `src/` (Services und DB-Init), wird über `docker-compose.yml` im Repo-Root gestartet und mit einem Live-Test geprüft.
+
+Schritt-für-Schritt-Anleitung (E-Learning komplett testen): [informationen/werkzeuge/elearning-testen.md](informationen/werkzeuge/elearning-testen.md)
+Schritt-für-Schritt-Anleitung (Docker-Stack): [informationen/werkzeuge/live-test-anleitung.md](informationen/werkzeuge/live-test-anleitung.md)
+Branch-Protection-Checkliste: [informationen/werkzeuge/branch-protection-checkliste.md](informationen/werkzeuge/branch-protection-checkliste.md)
+
 ## Projektstruktur & Template
 
 Dieses Repo nutzt [edu-code-projecttemplate](https://github.com/ChristineJanischek/edu-code-projecttemplate) als Basis-Infrastruktur. Das Template stellt eine vollständige Laufzeitumgebung bereit (PHP-Webapp, Python-API, MySQL, Java) inklusive Scripts und Dokumentationsvorlagen.
 
 ```
 edu-code-course-ml/
+├── src/              ← Neue live testbare Demo-Services (Java, Python, PHP, JS, MySQL-Init)
+├── docker-compose.yml← Startet die Root-Live-Umgebung
 ├── template/         ← Submodule: edu-code-projecttemplate (Laufzeitumgebung)
 ├── informationen/    ← Hilfsmittel für Schüler (Grundlagen, Cheatsheets, Werkzeuge)
 ├── informationen/lehrplan/ ← Lernhorizont, Erwartungshorizont, Begrifflichkeiten, Themen
@@ -18,6 +36,34 @@ edu-code-course-ml/
 ```
 
 ## Schnellstart
+
+### A) Neue Root-Live-Umgebung (empfohlen für schnellen Start)
+
+```bash
+cp .env.example .env
+## CHANGE_ME-Werte in .env durch sichere Passwoerter ersetzen
+docker compose up -d --build
+chmod +x tests/live/test_live_stack.sh
+./tests/live/test_live_stack.sh
+chmod +x tests/live/security_smoke.sh
+./tests/live/security_smoke.sh
+```
+
+Wichtige URLs:
+- PHP: `http://localhost:8080`
+- JS-Web: `http://localhost:8081`
+- Python: `http://localhost:8000/health`
+- Java: `http://localhost:8082`
+
+Details: [informationen/werkzeuge/live-test-anleitung.md](informationen/werkzeuge/live-test-anleitung.md)
+
+Sicherheit:
+- `.env` wird im Repo-Root per `.gitignore` ausgeschlossen.
+- Services sind nur an `127.0.0.1` gebunden.
+- Container laufen mit Security-Hardening (`no-new-privileges`, `cap_drop`, read-only wo sinnvoll).
+- CI-Sicherheits-Scans laufen in `.github/workflows/security-scans.yml`.
+
+### B) Template-Umgebung (Submodule)
 
 **1. Repo klonen (mit Submodule):**
 ```bash

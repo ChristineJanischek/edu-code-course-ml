@@ -12,6 +12,14 @@ Dieses Verzeichnis enthält alle Lernmaterialien und Hilfsmittel, die Schüler b
 | [cheatsheets/](cheatsheets/) | Kurzreferenzen zum schnellen Nachschlagen |
 | [lehrplan/](lehrplan/) | Lernhorizont, Erwartungshorizont, Begrifflichkeiten, Themen |
 
+### Einstieg: E-Learning testen
+
+Neu hier? Die vollständige Schritt-für-Schritt-Anleitung zum Einrichten und Testen des gesamten E-Learning-Environments findest du hier:
+
+**[werkzeuge/elearning-testen.md](werkzeuge/elearning-testen.md)**
+
+Die Anleitung führt durch alle Phasen: Voraussetzungen prüfen, Docker-Services starten, ML-Notebooks öffnen und automatische Tests ausführen.
+
 ---
 
 ## Wie nutze ich diese Unterlagen?
