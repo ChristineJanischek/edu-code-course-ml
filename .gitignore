@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+
+# Verhindert versehentliches Einchecken des verschachtelten Repos
+/edu-code-course-ml/

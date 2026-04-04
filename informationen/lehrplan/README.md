@@ -5,6 +5,7 @@ Dieser Bereich enthält die didaktischen Leitdokumente für das E-Learning "KI u
 ## Inhalt
 
 - [lernhorizont.md](lernhorizont.md) - Strukturierte, versionierbare Markdown-Fassung des Lernhorizonts
+- [marschplan-ki-ml.md](marschplan-ki-ml.md) - Didaktischer Fahrplan und Aufgabenvorschlaege fuer die Lehrplaneinheit KI/ML
 - `Lernhorizont.pdf` - Freigabefassung / Export für Weitergabe
 
 ## Zweck

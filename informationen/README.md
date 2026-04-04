@@ -6,11 +6,17 @@ Dieses Verzeichnis enthält alle Lernmaterialien und Hilfsmittel, die Schüler b
 
 | Ordner | Inhalt |
 |--------|--------|
-| [grundlagen/](grundlagen/) | Grundbegriffe KI & Machine Learning |
+| [grundlagen/](grundlagen/) | Grundbegriffe KI & Machine Learning inkl. Skript fuer ca. 30 LPE |
 | [python/](python/) | Python-Grundlagen und wichtige Bibliotheken |
 | [werkzeuge/](werkzeuge/) | Anleitungen zu Tools (Jupyter, Git, Docker) |
 | [cheatsheets/](cheatsheets/) | Kurzreferenzen zum schnellen Nachschlagen |
 | [lehrplan/](lehrplan/) | Lernhorizont, Erwartungshorizont, Begrifflichkeiten, Themen |
+
+### Neu: KI/ML Grundlagen-Skript (30 LPE)
+
+Fuer den direkten Unterrichtseinsatz steht jetzt ein ausfuehrliches Skript mit Begriffen, Impulsen, Mini-Aufgaben und didaktischer Struktur bereit:
+
+- [grundlagen/ki-und-ml.md](grundlagen/ki-und-ml.md)
 
 ### Einstieg: E-Learning testen
 
