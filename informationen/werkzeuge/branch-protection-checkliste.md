@@ -64,3 +64,11 @@ Einmal pro Quartal pruefen:
 - Sind Abhaengigkeiten/Images aktuell?
 - Sind Branch-Regeln unveraendert aktiv?
 - Gibt es wiederkehrende Security-Befunde?
+
+## 9. Freigabe- und Backup-Routine (verbindlich)
+
+- Lokale Hook-Freigabe aktivieren: `scripts/git/install-hooks.sh`
+- Vor jedem Commit: `scripts/git/approval.sh grant commit 15`
+- Vor jedem Push: `scripts/git/approval.sh grant push 15`
+- Automatische Milestone-Backups aktiv ueberwachen: `.github/workflows/milestone-backup.yml`
+- Prozessdokumentation: `informationen/werkzeuge/git-freigabe-backupstrategie.md`

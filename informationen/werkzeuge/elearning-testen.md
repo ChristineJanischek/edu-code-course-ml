@@ -17,6 +17,8 @@ Diese Anleitung richtet sich an **Schüler und Lehrer**, die das E-Learning-Envi
 | 7. Aufgaben & Tests prüfen | Schüler-Tests (pytest) ausführen | ~3 Min. |
 | 8. Aufräumen | Services stoppen | ~1 Min. |
 
+Lehrkraft-Kurzreferenz (BPE 6/7): [lehrkraft-test-kurzreferenz.md](lehrkraft-test-kurzreferenz.md)
+
 ---
 
 ## Phase 1 – Voraussetzungen prüfen
@@ -183,9 +185,10 @@ Navigiere im Browser zum Ordner `notebooks/` und öffne die Notebooks der Reihe 
 | Datei | Inhalt | Voraussetzung |
 |-------|--------|---------------|
 | `00_projektstruktur_analyse.ipynb` | Überblick über das Repo | keine |
-| *(geplant)* `01_einfuehrung.ipynb` | Python, NumPy, Pandas | keine |
-| *(geplant)* `02_daten_erkunden.ipynb` | Datenanalyse (Aufgabe 01) | Aufgabe 01 gelesen |
-| *(geplant)* `03_lineare_regression.ipynb` | Lineare Regression (Aufgabe 02) | Aufgabe 02 gelesen |
+| `01_einfuehrung.ipynb` | Python-Einstieg und KI/ML-Basis | keine |
+| `02_daten_erkunden.ipynb` | Datenanalyse und Visualisierung | Grundlagen gelesen |
+| `03_lineare_regression.ipynb` | Lineare Regression | Datenanalyse abgeschlossen |
+| `04_ki_tools_bwl.ipynb` | KI-Transfer auf BWL-Anwendungsfall | Regression und Verfahrenvergleich |
 
 **Alle Zellen eines Notebooks ausführen:**
 - Menü: `Kernel` → `Restart & Run All`
@@ -217,8 +220,14 @@ Automatische Tests prüfen, ob die Aufgabenlösungen korrekt sind:
 # Alle Tests ausführen
 python3 -m pytest tests/ -v
 
-# Nur Tests für Grundlagen
+# Nur Tests fuer Grundlagen
 python3 -m pytest tests/01_grundlagen/ -v
+
+# Verfahrenvergleich
+python3 -m pytest tests/03_regression/ -v
+
+# Vertiefung, Transfer und BPE-Mapping
+python3 -m pytest tests/04_fortgeschritten/ -v
 ```
 
 **Erwartete Ausgabe (Beispiel):**

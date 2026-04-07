@@ -1,22 +1,29 @@
-# Musterlösungen
+# Musterloesungen
 
-Dieses Verzeichnis enthält die Musterlösungen zu den Aufgaben.
+Dieses Verzeichnis enthaelt Musterloesungen fuer den KI/ML-Kurspfad A1 bis B4.
 
-> **Hinweis für Schüler:** Schau erst hier rein, wenn du die Aufgabe selbst bearbeitet hast.  
-> Das eigenständige Lösen ist der wichtigste Teil des Lernprozesses!
+> Hinweis fuer Schuelerinnen und Schueler: Nutze Musterloesungen erst nach eigener Bearbeitung.
 
 ## Struktur
 
 ```
 loesungen/
-├── 01_grundlagen/      ← Lösungen zu Grundlagenaufgaben
-├── 02_klassifikation/  ← Lösungen zu Klassifikationsaufgaben
-├── 03_regression/      ← Lösungen zu Regressionsaufgaben
-└── 04_fortgeschritten/ ← Lösungen zu fortgeschrittenen Aufgaben
+├── 01_grundlagen/
+│   ├── loesung_01_daten_erkunden.md
+│   ├── loesung_a1_kursstart_python.md
+│   └── loesung_a3_datenqualitaet_training_test.md
+├── 03_regression/
+│   └── loesung_a2_verfahrenvergleich_ml.md
+└── 04_fortgeschritten/
+	├── loesung_a4_neuronale_netze_und_trends.md
+	├── loesung_b1_visualisierung_grosse_daten.md
+	├── loesung_b2_ki_programmbibliotheken.md
+	├── loesung_b3_ki_toolauswahl_bwl.md
+	└── loesung_b4_anwendungsprojekt_bwl_ki.md
 ```
 
-## Hinweise für Lehrer
+## Hinweise fuer Lehrkraefte
 
-- Musterlösungen sind als kommentierte Python-Skripte oder Jupyter Notebooks abgelegt
-- Jede Lösung ist der entsprechenden Aufgabe in `../aufgaben/` zugeordnet
-- Bewertungskriterien sind in den jeweiligen Aufgabenstellungen beschrieben
+- Jede Loesung ist einer Aufgabe in `../aufgaben/` eindeutig zugeordnet.
+- Die Loesungen koennen fuer formative Rueckmeldung und differenzierte Hilfestellung genutzt werden.
+- Bewertungsraster und Kompetenzziele sind im Marschplan dokumentiert.

@@ -1,22 +1,41 @@
 # Aufgaben
 
-Dieses Verzeichnis enthält alle ML-Aufgaben für Schüler, geordnet nach Schwierigkeitsgrad.
+Dieses Verzeichnis enthaelt die Aufgaben fuer den KI/ML-Kurs nach BPE 6 und BPE 7.
+
+## Kurspfad A1 bis B4
+
+- A1: Kursstart KI/ML und Python-Einstieg
+- A2: Verfahrensvergleich ML (Regression, Entscheidungsbaum, k-Means, k-NN)
+- A3: Datenqualitaet, Training/Test, labeled/unlabeled
+- A4: Neuronale Netze und aktuelle Entwicklungen
+- B1: Auswertung und Visualisierung grosser Datenmengen
+- B2: KI-Programmbibliotheken einsetzen
+- B3: KI-Toolauswahl fuer betriebswirtschaftliche Probleme
+- B4: Anwendungsprojekt BWL + KI
 
 ## Struktur
 
 ```
 aufgaben/
-├── 01_grundlagen/      ← Einstiegsaufgaben (Daten, Python, Visualisierung)
-├── 02_klassifikation/  ← Klassifikationsmodelle
-├── 03_regression/      ← Regressionsmodelle
-└── 04_fortgeschritten/ ← Komplexere Aufgaben & Projekte
+├── 01_grundlagen/
+│   ├── aufgabe_01_daten_erkunden.md
+│   ├── aufgabe_a1_kursstart_python.md
+│   └── aufgabe_a3_datenqualitaet_training_test.md
+├── 03_regression/
+│   ├── aufgabe_02_lineare_regression.md
+│   └── aufgabe_a2_verfahrenvergleich_ml.md
+└── 04_fortgeschritten/
+	├── aufgabe_a4_neuronale_netze_und_trends.md
+	├── aufgabe_b1_visualisierung_grosse_daten.md
+	├── aufgabe_b2_ki_programmbibliotheken.md
+	├── aufgabe_b3_ki_toolauswahl_bwl.md
+	└── aufgabe_b4_anwendungsprojekt_bwl_ki.md
 ```
 
-## Hinweise für Schüler
+## Hinweise fuer Schuelerinnen und Schueler
 
-- Lies jede Aufgabe vollständig, bevor du anfängst
-- Richte dich am Lernhorizont in `../informationen/lehrplan/lernhorizont.md` aus
-- Nutze die Materialien in `../informationen/` als Hilfsmittel
-- Bearbeite die Aufgaben in den Jupyter Notebooks unter `../notebooks/`
-- Überprüfe deine Lösung mit den Tests in `../tests/`
-- Musterlösungen findest du erst nach eigener Bearbeitung in `../loesungen/`
+- Lies jede Aufgabe vollstaendig vor dem Start.
+- Nutze den Marschplan in `../informationen/lehrplan/marschplan-ki-ml.md` als Leitfaden.
+- Bearbeite die praktischen Teile in `../notebooks/`.
+- Verwende gestufte Hilfen (Impuls, Strategie, Fachhilfe), bevor du eine Musterloesung oeffnest.
+- Dokumentiere deinen Lernweg im Lernjournal (Fehler, Erkenntnis, naechster Schritt).

@@ -3,6 +3,7 @@
 !.env.example
 __pycache__/
 *.pyc
+backups/milestones/
 
 # Verhindert versehentliches Einchecken des verschachtelten Repos
 /edu-code-course-ml/

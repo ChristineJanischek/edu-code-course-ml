@@ -1,18 +1,26 @@
 # Notebooks
 
-Dieses Verzeichnis enthält alle Jupyter Notebooks für den ML-Kurs.  
-Hier arbeiten Schüler die Aufgaben praktisch durch.
+Dieses Verzeichnis enthaelt die praktischen Kursnotebooks fuer BPE 6 und BPE 7.
 
 ## Struktur
 
 ```
 notebooks/
-├── daten/                        ← Datensätze (CSV-Dateien)
-│   └── haeuser.csv               ← Beispieldatensatz: Häuser mit Größe & Preis
-├── 01_einfuehrung.ipynb          ← Einführung: Python, NumPy, Pandas
-├── 02_daten_erkunden.ipynb       ← Datenanalyse (Aufgabe 01)
-└── 03_lineare_regression.ipynb   ← Lineare Regression (Aufgabe 02)
+├── daten/
+│   └── haeuser.csv
+├── 00_projektstruktur_analyse.ipynb
+├── 01_einfuehrung.ipynb
+├── 02_daten_erkunden.ipynb
+├── 03_lineare_regression.ipynb
+└── 04_ki_tools_bwl.ipynb
 ```
+
+## Kurzbeschreibung
+
+- 01_einfuehrung.ipynb: Python-Einstieg, KI/ML-Grundbegriffe, erste Datenzellen
+- 02_daten_erkunden.ipynb: Datencheck, Statistik, Visualisierung
+- 03_lineare_regression.ipynb: Train/Test, Modelltraining, Guetemasse
+- 04_ki_tools_bwl.ipynb: KI-Workflow fuer betriebswirtschaftlichen Anwendungsfall
 
 ## Starten
 
@@ -20,6 +28,4 @@ notebooks/
 jupyter notebook
 ```
 
-→ Öffnet sich im Browser unter `http://localhost:8888`
-
-> Tipp: Lies die Aufgabenstellung in `../aufgaben/` bevor du das Notebook öffnest.
+Danach die Notebooks in Reihenfolge 01 -> 04 bearbeiten.

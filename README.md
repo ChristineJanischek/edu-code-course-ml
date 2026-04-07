@@ -15,7 +15,14 @@ Sie liegt in `src/` (Services und DB-Init), wird über `docker-compose.yml` im R
 
 Schritt-für-Schritt-Anleitung (E-Learning komplett testen): [informationen/werkzeuge/elearning-testen.md](informationen/werkzeuge/elearning-testen.md)
 Schritt-für-Schritt-Anleitung (Docker-Stack): [informationen/werkzeuge/live-test-anleitung.md](informationen/werkzeuge/live-test-anleitung.md)
+Lehrkraft-Kurzreferenz Tests (BPE 6/7): [informationen/werkzeuge/lehrkraft-test-kurzreferenz.md](informationen/werkzeuge/lehrkraft-test-kurzreferenz.md)
+Bewertungsmatrix A1-B4 (BPE 6/7): [informationen/lehrplan/bewertungsmatrix-a1-b4.md](informationen/lehrplan/bewertungsmatrix-a1-b4.md)
+Druckversion Bewertungsbogen A1-B4: [informationen/lehrplan/bewertungsbogen-a1-b4-druckversion.md](informationen/lehrplan/bewertungsbogen-a1-b4-druckversion.md)
+Kompaktbogen A1-B4 (2 Seiten): [informationen/lehrplan/bewertungsbogen-a1-b4-kompakt-2seiten.md](informationen/lehrplan/bewertungsbogen-a1-b4-kompakt-2seiten.md)
+Einzelbogen erweitert: [informationen/lehrplan/bewertungsbogen-einzelperson-erweitert.md](informationen/lehrplan/bewertungsbogen-einzelperson-erweitert.md)
+PDF-Exportversion A1-B4: [informationen/lehrplan/bewertungsbogen-a1-b4-pdf-export.md](informationen/lehrplan/bewertungsbogen-a1-b4-pdf-export.md)
 Branch-Protection-Checkliste: [informationen/werkzeuge/branch-protection-checkliste.md](informationen/werkzeuge/branch-protection-checkliste.md)
+Git-Freigabe und Backupstrategie: [informationen/werkzeuge/git-freigabe-backupstrategie.md](informationen/werkzeuge/git-freigabe-backupstrategie.md)
 
 ## Projektstruktur & Template
 

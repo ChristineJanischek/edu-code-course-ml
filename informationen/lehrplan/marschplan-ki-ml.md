@@ -1,187 +1,233 @@
-# Marschplan KI/ML Lehrplaneinheit
+# Marschplan KI/ML (BPE 6 und BPE 7, BKWI)
 
 ## Metadaten
 
-- Bereich: KI und Machine Learning
-- Stand: 2026-04-01
-- Bezug: lernhorizont.md Version 0.1
-- Zielgruppe: Schuelerinnen und Schueler (Sek I/II, anpassbar)
-- Zweck: Didaktischer Fahrplan + Aufgabenvorschlaege + Umsetzungsreihenfolge
+- Bereich: Wirtschaftsinformatik, Bildungsplan BKWI
+- Stand: 2026-04-07
+- Quelle: Neuer Bildungsplan BKWI-Wirtschaftsinformatik-090925.pdf
+- Zielgruppe: Oberstufe und Berufskolleg Wirtschaftsinformatik/Informatik
+- Umfang: BPE 6 (15 UStd) + BPE 7 (15 UStd) = 30 Unterrichtsstunden
+- Zielsetzung: Landesweit einsetzbarer, praxisnaher, motivierender KI/ML-Kurs mit Python-Einstieg und selbstgesteuertem Lernen
 
-## Kurzantwort auf deine Frage
+## Verbindliche Grundlage aus dem Bildungsplan
 
-Ja, ein Marschplan existiert bereits unter `template/docs/handbuch/marschplaene/HAUPTMARSCHPLAN.md`.
-Dieser ist jedoch auf die Routinen-Wissensdatenbank ausgerichtet, nicht auf die KI/ML-Lehrplaneinheit.
-Dieser neue Marschplan schliesst genau diese Luecke.
+### BPE 6 Einfuehrung in Machine Learning und Kuenstliche Intelligenz (15)
 
-## Didaktische Leitidee
+- BPE 6.1: Grundlegende algorithmische Verfahren von ML anhand von Beispielen darstellen
+- BPE 6.2: Bedeutung von Daten fuer ML beurteilen
+- BPE 6.3: Zusammenhaenge einzelner Themenbereiche von KI beschreiben und Arbeitsweisen von KI-Tools identifizieren
 
-- Ziel: Schueler sollen von Begriffsverstaendnis zu eigenstaendiger Modellanwendung gelangen.
-- Prinzip: Fuehren -> Ueben -> Transfer -> Reflektieren.
-- Hilfe-Design: Gestufte Hilfen (Impuls, Strategie, fachliche Hilfe), damit Selbststaendigkeit erhalten bleibt.
-- Bewertung: Erwartungshorizont pro Aufgabe transparent machen (fachlich, methodisch, begruendend).
+Verpflichtende Inhalte BPE 6:
+- Regression
+- Entscheidungsbaum
+- Clustering (z. B. k-Means)
+- Klassifikation (z. B. k-Nearest Neighbor)
+- Training von Modellen:
+  - Trainingsdaten
+  - Testdaten
+  - labeled Data
+  - unlabeled Data
+- Zusammenhang Datenmenge und Vorhersagequalitaet
+- Themenbereiche KI (z. B. Machine Learning, Deep Learning, Language Processing)
+- Funktionsweise neuronaler Netze
+- Aktuelle Entwicklungen
 
-## Umfangsvorschlag (konkretisierbar)
+### BPE 7 Vertiefung in Machine Learning und Kuenstliche Intelligenz (15)
 
-- Moduldauer: 4 Module
-- Zeit je Modul: 90 Minuten (oder 2 x 45 Min)
-- Gesamtzeit: 6-8 Unterrichtsstunden
+- BPE 7.1: Software zur Auswertung und Visualisierung grosser Datenmengen anwenden
+- BPE 7.2: Verfuegbare KI-Tools zur Loesung betriebswirtschaftlicher Probleme anwenden
 
-## Lernpfad (Module)
+Verpflichtende Inhalte BPE 7:
+- Grafische Auswertungstools
+- Einsatz von KI-Programmbibliotheken
+- Identifizierung verfuegbarer KI-Tools fuer betriebswirtschaftliche Probleme
+- Einsatz verfuegbarer KI-Tools fuer betriebswirtschaftliche Probleme
 
-### Modul 1: KI, ML, Datenbegriff
+## Kursleitbild (didaktisch und paedagogisch)
 
-- Lernziel: KI, ML und Daten sauber unterscheiden; Begriffe sicher anwenden.
-- Fokus: KI vs. ML, Datensatz, Feature, Label, Modell.
-- Produkt: Begriffslandkarte + kurze Begruendung in eigenen Worten.
+- Praxis zuerst: Jede Lerneinheit startet mit einer realen Fragestellung aus Wirtschaft oder Lebenswelt.
+- Schritt-fuer-Schritt zum Erfolg: Jede Aufgabe hat Pflichtpfad, Hilfepfad und Erweiterungspfad.
+- Selbststeuerung mit Sicherheit: Lernende planen, pruefen und reflektieren ihren Arbeitsstand mit klaren Checklisten.
+- Motivationsdesign: Sichtbare Zwischenprodukte, kurze Erfolgsschleifen, reale Datensaetze, Team- und Einzelphasen.
+- Inklusion und Differenzierung: Basis-, Standard- und Expertenniveau in jeder Einheit.
 
-### Modul 2: Daten erkunden und aufbereiten
+## Kompetenzziele des Gesamtkurses
 
-- Lernziel: Einfache Datensaetze beschreiben und interpretieren.
-- Fokus: Spaltenarten, Ausreisser, Fehlwerte, einfache Visualisierung.
-- Produkt: Mini-Datenreport (3 Erkenntnisse + 1 Frage an die Daten).
+Am Ende des Kurses koennen die Schuelerinnen und Schueler:
 
-### Modul 3: Lineare Regression verstehen
+- die verpflichtenden ML-Verfahren fachsprachlich korrekt unterscheiden und beispielhaft anwenden,
+- Datenrollen (Training/Test, labeled/unlabeled) erklaeren und die Datenqualitaet als Erfolgsfaktor begruenden,
+- KI-Themenbereiche einordnen (ML, Deep Learning, Language Processing) und Arbeitsweisen von KI-Tools kritisch beschreiben,
+- softwaregestuetzt Daten visualisieren und auswerten,
+- KI-Bibliotheken in Python fuer einfache Loesungen nutzen,
+- KI-Tools fuer betriebswirtschaftliche Probleme auswaehlen, anwenden und begruenden,
+- Ergebnisse adressatengerecht praesentieren und Grenzen, Risiken sowie Verbesserungen benennen.
 
-- Lernziel: Lineare Regression konzeptionell erklaeren.
-- Fokus: Gerade als Modell, Zusammenhang Feature-Label, Training.
-- Produkt: Regressionsplot + verbale Erklaerung.
+## Didaktische Gesamtstruktur (30 Unterrichtsstunden)
 
-### Modul 4: Modellbewertung und Fehleranalyse
+## Phase A: Grundlagen und Orientierung (BPE 6, 15 UStd)
 
-- Lernziel: Ergebnisse nachvollziehbar begruenden.
-- Fokus: Vorhersagefehler, einfache Guetemasse, Grenzen des Modells.
-- Produkt: Kurze Ergebnisreflexion mit Verbesserungsvorschlag.
+### Modul A1 Kursstart, KI/ML-Verstaendnis, Python-Einstieg (3 UStd)
 
-## Aufgabenpool (Erwartungshorizont-konform)
+- Lernziele:
+  - KI, ML und Datenkonzepte korrekt unterscheiden
+  - Erste Python-Analysezelle im Notebook verstehen und ausfuehren
+  - Arbeitsweise von KI-Tools auf Basisebene benennen
+- Inhalte:
+  - KI vs. ML, Feature, Label, Modell
+  - Python-Basics fuer den Kurs: Variablen, Listen, DataFrame lesen, einfache Visualisierung
+  - Themenbereiche KI (ML, Deep Learning, Language Processing)
+- Produkt:
+  - Lernjournal-Eintrag + lauffaehiges Einstiegs-Notebook
 
-### A1 Begriffe sortieren (Einstieg)
+### Modul A2 Verpflichtende ML-Verfahren verstehen und ausprobieren (5 UStd)
 
-- Typ: Kurzaufgabe (15-20 Min)
-- Auftrag: Ordne 12 Begriffe den Kategorien KI, ML, Daten zu und begruende 3 Zuordnungen.
-- Erwartungshorizont:
-  - Basis: 8/12 korrekt.
-  - Standard: 10/12 korrekt + 2 sinnvolle Begruendungen.
-  - Erweitert: 12/12 + fachsprachlich praezise Begruendung.
+- Lernziele:
+  - Regression, Entscheidungsbaum, Clustering (k-Means), Klassifikation (k-NN) erklaeren
+  - Verfahren anhand gegebener Minidatensaetze begruendet auswaehlen
+- Inhalte:
+  - Verfahrenvergleich: Wann welches Verfahren?
+  - Guided Labs in Python (einfaches, vorbereitetes Coding)
+- Produkt:
+  - Methoden-Portfolio mit 4 Mini-Beispielen und Kurzbegruendungen
 
-### A2 Datensatz lesen und erklaeren
+### Modul A3 Daten als Schluesselfaktor (4 UStd)
 
-- Typ: Analyseaufgabe (30 Min)
-- Auftrag: Beschreibe den Datensatz `notebooks/daten/haeuser.csv` anhand von 5 Leitfragen.
-- Erwartungshorizont:
-  - erkennt Features/Label korrekt,
-  - beschreibt Auffaelligkeiten,
-  - formuliert mindestens 1 Hypothese.
+- Lernziele:
+  - Training/Test, labeled/unlabeled sicher anwenden
+  - Zusammenhang Datenmenge und Vorhersagequalitaet begruenden
+- Inhalte:
+  - Datensplitting, Basisqualitaetscheck, Fehlerbild bei kleinen/grossen Datenmengen
+  - Vergleichsuebung mit reduzierter und erweiterter Datenbasis
+- Produkt:
+  - Datenqualitaetsbericht mit argumentativer Auswertung
 
-### A3 Datenaufbereitung minimal
+### Modul A4 Neuronale Netze und aktuelle Entwicklungen einordnen (3 UStd)
 
-- Typ: Notebook-Aufgabe (30-40 Min)
-- Auftrag: Fehlende Werte behandeln, 1 Ausreisser markieren, 1 begruendete Bereinigungsentscheidung.
-- Erwartungshorizont:
-  - nachvollziehbarer Workflow,
-  - fachlich stimmige Entscheidung,
-  - Begruendung in 3-5 Saetzen.
+- Lernziele:
+  - Grundidee neuronaler Netze verstaendlich beschreiben
+  - Aktuelle Entwicklungen einordnen und Chancen/Risiken reflektieren
+- Inhalte:
+  - Input-Hidden-Output-Modell (konzeptionell)
+  - Aktuelle KI-Entwicklungen im Schul- und Berufsbezug
+- Produkt:
+  - Kurzpraesentation oder Erklaervideo (2-3 Minuten)
 
-### A4 Erste Regression bauen
+## Phase B: Vertiefung und Transfer (BPE 7, 15 UStd)
 
-- Typ: Guided Coding (45 Min)
-- Auftrag: Trainiere ein lineares Regressionsmodell und gib Koeffizient/Intercept aus.
-- Erwartungshorizont:
-  - Pipeline laeuft,
-  - Parameter koennen in Worten erklaert werden,
-  - 1 fachlicher Grenzenhinweis.
+### Modul B1 Daten softwaregestuetzt auswerten und visualisieren (5 UStd)
 
-### A5 Vorhersage interpretieren
+- Lernziele:
+  - grafische Auswertungstools zielgerichtet nutzen
+  - grosse Datenmengen strukturiert auswerten und visualisieren
+- Inhalte:
+  - Diagrammwahl und Interpretation
+  - Python-Bibliotheken fuer Analyse und Visualisierung (z. B. pandas, matplotlib, seaborn)
+- Produkt:
+  - Dashboard-Notebook mit Kernkennzahlen und Visual Story
 
-- Typ: Transferaufgabe (20-30 Min)
-- Auftrag: Interpretiere 3 neue Vorhersagen und entscheide, welche plausibel ist.
-- Erwartungshorizont:
-  - nutzt Modelllogik statt Raten,
-  - begruendet Unsicherheit,
-  - erkennt mindestens 1 unplausiblen Wert.
+### Modul B2 KI-Programmbibliotheken praxisnah einsetzen (4 UStd)
 
-### A6 Fehleranalyse und Verbesserung
+- Lernziele:
+  - KI-Programmbibliotheken fuer konkrete Auswertungsaufgaben anwenden
+  - Vorgehensschritte reproduzierbar dokumentieren
+- Inhalte:
+  - Einfache Modellierung mit KI-Bibliotheken (z. B. scikit-learn)
+  - Baseline, Modelllauf, Ergebnisinterpretation
+- Produkt:
+  - Reproduzierbares Analyse-Notebook mit Kurzkommentar
 
-- Typ: Reflexionsaufgabe (30 Min)
-- Auftrag: Vergleiche Ist/Soll-Werte, identifiziere Fehlermuster und schlage 2 Verbesserungen vor.
-- Erwartungshorizont:
-  - benennt Fehlermuster,
-  - verknuepft Ursache und Wirkung,
-  - macht umsetzbare Vorschlaege.
+### Modul B3 KI-Tools fuer betriebswirtschaftliche Probleme auswaehlen (3 UStd)
 
-### A7 Mini-Projekt (optional, differenzierend)
+- Lernziele:
+  - verfuegbare KI-Tools zur Problemloesung identifizieren
+  - Auswahlentscheidungen fachlich begruenden
+- Inhalte:
+  - Toolvergleich anhand Kriterienkatalog (Nutzen, Datenbedarf, Kosten, Datenschutz, Skalierbarkeit)
+  - Mapping Tool -> BWL-Problem (z. B. Nachfrageprognose, Kundencluster, Churn-Risiko)
+- Produkt:
+  - Entscheidungsblatt mit begruendeter Toolempfehlung
 
-- Typ: Teamarbeit (60-90 Min)
-- Auftrag: Eigene Fragestellung mit kleinem Datensatz, Modellbau, Kurzpraesentation.
-- Erwartungshorizont:
-  - strukturierte Vorgehensweise,
-  - nachvollziehbare Ergebnisse,
-  - kritische Reflexion der Modellgrenzen.
+### Modul B4 Anwendungsprojekt BWL + KI (3 UStd)
 
-## Paedagogisch sinnvolle Hilfestruktur pro Aufgabe
+- Lernziele:
+  - KI-Tools fuer ein betriebswirtschaftliches Problem anwenden
+  - Ergebnisse, Grenzen und Verbesserungen praezise darstellen
+- Inhalte:
+  - Mini-Projekt in Teams oder Einzelarbeit
+  - Ergebnisstory mit Reflexion
+- Produkt:
+  - Projektbericht + Pitch (5 Minuten)
 
-- Hilfe 1 Impulsfrage: "Was ist hier die Kernfrage?"
-- Hilfe 2 Strategiehinweis: "Welche 3 Schritte fuehren zum Ziel?"
-- Hilfe 3 Fachhilfe: "Welche Formel/Funktion passt konkret?"
-- Selbstcheck: 2-3 Kontrollfragen vor Abgabe.
+## Selbstgesteuerte Lernarchitektur (Schritt-fuer-Schritt)
 
-## Bewertungsraster (einfach, transparent)
+Jede Lerneinheit folgt dem gleichen Lernloop:
 
-- Fachlichkeit (40%): inhaltlich korrekt, Begriffe richtig.
-- Methode (30%): nachvollziehbarer Arbeitsweg.
-- Begruendung (20%): Entscheidungen und Ergebnisse erklaert.
-- Darstellung (10%): klar, strukturiert, lesbar.
+1. Startimpuls: Reale Problemfrage mit Erwartungstransparenz.
+2. Vorwissen aktivieren: 5-Minuten-Selbstcheck.
+3. Gefuehrte Erarbeitung: Demo + kommentiertes Notebook.
+4. Selbstlernphase: Pflichtaufgabe mit Hilfekarten (Impuls, Strategie, Fachhilfe).
+5. Transfer: Neue, aehnliche Aufgabe ohne direkte Loesungsschritte.
+6. Reflexion: Lerntagebuch (Was kann ich? Wo brauche ich Hilfe?).
+7. Sicherung: Kompetenz-Check (Muss-Ziele) + optionaler Ausbau (Kann-Ziele).
 
-## Umsetzungs-Marschplan in 4 Phasen
+## Leistungsnachweise und Bewertung
 
-### Phase 1: Lehrplan konkretisieren (1 Tag)
+- Diagnose (lernfoerderlich): Einstiegsquiz, Exit Tickets, Notebook-Checks
+- Formativ: Zwischenprodukte je Modul (Portfolio)
+- Summativ: Anwendungsprojekt mit Rubrik
 
-1. TBDs in lernhorizont.md fuellen (Kursdauer, Lernzeit, Modulanzahl).
-2. Bewertungsraster finalisieren.
-3. Lernziele je Modul in "muss/kann" differenzieren.
+Bewertungsrubrik (landesweit einheitlich nutzbar):
 
-### Phase 2: Aufgabenbasis erstellen (2-3 Tage)
+- Fachkompetenz KI/ML (35 Prozent)
+- Daten- und Methodenkompetenz (25 Prozent)
+- Problemlosen im BWL-Kontext (20 Prozent)
+- Reflexion, Begruendung, Verantwortung (10 Prozent)
+- Darstellung und Teamarbeit (10 Prozent)
 
-1. Aufgaben A1-A6 als Markdown in `aufgaben/` anlegen.
-2. Musterloesungen in `loesungen/` anlegen.
-3. Zu jeder Aufgabe 3 Hilfestufen definieren.
+Konkrete Modul-Bewertungsmatrix A1-B4:
+- `bewertungsmatrix-a1-b4.md`
 
-### Phase 3: Praktische Durchfuehrung absichern (2 Tage)
+## Lernziel-Mapping (vollstaendige Abdeckung BPE 6/7)
 
-1. Notebooks fuer Modul 1-4 erstellen/aktualisieren.
-2. Browserbasierte Uebungs- und Teststrecken erweitern.
-3. Tests in `tests/` je Aufgabe ergänzen.
+- BPE 6.1 (Verfahren darstellen): A2, B2
+- BPE 6.2 (Bedeutung von Daten): A3, B1
+- BPE 6.3 (KI-Bereiche und KI-Tools): A1, A4, B3
+- BPE 7.1 (Softwaregestuetzte Auswertung/Visualisierung): B1, B2
+- BPE 7.2 (KI-Tools fuer BWL-Probleme): B3, B4
 
-### Phase 4: Pilot und Iteration (1-2 Durchlaeufe)
+Verpflichtende Inhalte abgedeckt in:
 
-1. Pilot in einer Lerngruppe (30-60 Min Beobachtung).
-2. Auswertung: Wo brauchten Schueler zu viel Hilfe?
-3. Aufgaben und Hilfen iterativ nachjustieren.
+- Regression: A2, B2
+- Entscheidungsbaum: A2, B2
+- Clustering (k-Means): A2, B3
+- Klassifikation (k-NN): A2, B2
+- Trainings-/Testdaten, labeled/unlabeled: A3, B2
+- Datenmenge und Vorhersagequalitaet: A3, B1
+- KI-Themenbereiche: A1, A4
+- Funktionsweise neuronaler Netze: A4
+- Aktuelle Entwicklungen: A4, B4
+- Grafische Auswertungstools: B1
+- Einsatz von KI-Programmbibliotheken: B2
+- Identifizierung KI-Tools fuer BWL-Probleme: B3
+- Einsatz KI-Tools fuer BWL-Probleme: B4
 
-## Konkrete naechste 10 ToDos
+## Materialien und Infrastruktur fuer landesweiten Einsatz
 
-1. `informationen/lehrplan/lernhorizont.md`: TBD-Felder konkret ausfuellen.
-2. `aufgaben/01_grundlagen/`: Aufgabe A1 und A2 anlegen.
-3. `aufgaben/03_regression/`: Aufgabe A4 und A5 anlegen.
-4. `loesungen/01_grundlagen/`: Loesungen zu A1/A2 anlegen.
-5. `loesungen/03_regression/`: Loesungen zu A4/A5 anlegen.
-6. `notebooks/`: Notebook fuer A2 (Datenanalyse) und A4 (Regression) erstellen.
-7. `tests/01_grundlagen/`: Tests fuer A1/A2 ergaenzen.
-8. `tests/03_regression/`: Tests fuer A4/A5 ergaenzen.
-9. Frontend-Hilfe-Boxen um Hilfestufen pro Aufgabe erweitern.
-10. Lehrkraft-Checkliste fuer Erwartungshorizont-Bewertung erstellen.
+- Einheitliche Notebook-Templates (Schrittfolge, Hilfekarten, Selbstcheck)
+- Einheitliche Datenpakete mit regional neutralen Beispielen
+- Lehrerhandreichung mit Musterloesungen und Differenzierungshinweisen
+- Standardisierte Bewertungsrubriken und Kompetenzraster
+- Optionales Blended-Learning-Setup (Praesenz + Selbstlernzeiten)
 
-## Zuordnung Lernziel -> Aufgaben (Startvorschlag)
+## Konkrete Umsetzung im Repository
 
-- KI/ML unterscheiden -> A1
-- Datensaetze beschreiben/interpretieren -> A2, A3
-- Regression erklaeren -> A4
-- Regressionsergebnis begruenden -> A5, A6
-- Modellbewertung/Fehleranalyse -> A6, A7
+1. Aufgaben an BPE-Mapping anbinden und in Teilaufgaben zerlegen.
+2. Notebooks fuer Module A1 bis B4 strukturiert bereitstellen.
+3. Loesungen als Muster mit didaktischen Kommentaren bereitstellen.
+4. Tests fuer Kernkompetenzen (Daten, Verfahren, Transfer) erweitern.
+5. Lehrkraft-Checklisten fuer Diagnostik, Foerderung und Bewertung ergaenzen.
 
-## Hinweise zur Erweiterbarkeit und Wiederverwendung
+## Ergebnis
 
-- Aufgaben als strukturierte Daten halten (JSON/YAML/DB), nicht fest im UI.
-- Hilfen, Tests und Bewertungsraster als wiederverwendbare Felder modellieren.
-- API versionieren (`/api/v1/...`) fuer andere Repos als stabile Schnittstelle.
-- Dokumentation als Single Source of Truth im Lehrplan-Ordner pflegen.
+Dieser Marschplan erfuellt die verpflichtenden Inhalte und Lernziele der BPE 6 und BPE 7 vollstaendig und setzt sie als motivierenden, praxisnahen und schrittweisen KI/ML-Kurs mit Python-Einfuehrung fuer Oberstufe und Berufskolleg um.
