@@ -44,9 +44,10 @@ case "$command" in
     expires_at="$((current_epoch + valid_minutes * 60))"
     approver="$(git config user.name || true)"
     approver="${approver:-unknown}"
+    approver_b64="$(printf '%s' "$approver" | base64 -w0)"
 
     {
-      echo "approver=$approver"
+      echo "approver_b64=$approver_b64"
       echo "action=$action"
       echo "issued_at=$current_epoch"
       echo "expires_at=$expires_at"
@@ -63,9 +64,11 @@ case "$command" in
       exit 1
     fi
 
-    source "$marker_file"
+    expires_at="$(grep '^expires_at=' "$marker_file" | head -n1 | cut -d= -f2-)"
+    approver_b64="$(grep '^approver_b64=' "$marker_file" | head -n1 | cut -d= -f2-)"
+    approver="$(printf '%s' "$approver_b64" | base64 -d 2>/dev/null || printf 'unknown')"
 
-    if [[ "${expires_at:-0}" -lt "$current_epoch" ]]; then
+    if [[ -z "${expires_at:-}" ]] || [[ "$expires_at" -lt "$current_epoch" ]]; then
       rm -f "$marker_file"
       echo "Freigabe fuer '$action' ist abgelaufen. Bitte neu freigeben."
       exit 1
