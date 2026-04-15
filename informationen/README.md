@@ -17,6 +17,7 @@ Dieses Verzeichnis enthält alle Lernmaterialien und Hilfsmittel, die Schüler b
 Fuer den direkten Unterrichtseinsatz steht jetzt ein ausfuehrliches Skript mit Begriffen, Impulsen, Mini-Aufgaben und didaktischer Struktur bereit:
 
 - [grundlagen/ki-und-ml.md](grundlagen/ki-und-ml.md)
+- [grundlagen/promptverlauf-grundlagen-ki-ml.md](grundlagen/promptverlauf-grundlagen-ki-ml.md) (vollstaendiger Promptverlauf + automatisch verdichtetes Grundlagenskript)
 
 ### Einstieg: E-Learning testen
 
