@@ -22,6 +22,32 @@
 6. Kennzeichne in einem Beispiel, was labeled Data und was unlabeled Data waere.
 7. Formuliere eine Bewertung in 8 bis 10 Saetzen: Welche Rolle spielen Datenmenge und Datenqualitaet?
 
+## Schritt-fuer-Schritt: labeled vs unlabeled im Hauspreis-Beispiel
+
+### Beispielzeilen
+
+- labeled Data (mit Zielwert): `groesse_m2=95, zimmer=3, baujahr=2015, preis_euro=310000`
+- unlabeled Data (ohne Zielwert): `groesse_m2=95, zimmer=3, baujahr=2015, preis_euro=?`
+
+### Vorgehen mit Begruendung
+
+1. Definiere zuerst die Zielspalte (`preis_euro`).
+   - Warum: Nur mit klarer Zielspalte kannst du entscheiden, ob ein Datensatz ein Label besitzt.
+2. Trenne Eingaben (Features) und Zielwert gedanklich.
+   - Warum: Features sind die Informationen, aus denen gelernt wird; das Label ist die richtige Antwort.
+3. Pruefe pro Datensatz, ob der Zielwert vorhanden ist.
+   - Warum: Vorhandener Zielwert = labeled, fehlender Zielwert = unlabeled.
+4. Nutze labeled Data fuer das Training.
+   - Warum: Das Modell braucht bekannte richtige Antworten, um Fehler zu berechnen und Muster zu lernen.
+5. Nutze unlabeled Data fuer spaetere Vorhersagen nach dem Training.
+   - Warum: Genau dafuer wird das Modell gebaut: unbekannte Zielwerte schaetzen.
+6. Notiere die Einordnung in einem Satz in deiner Abgabe.
+   - Warum: Die Aufgabe bewertet nicht nur Code, sondern auch fachlich korrekte Begruendung.
+
+### Formulierungsbaustein fuer die Abgabe
+
+`Die Zeile mit bekanntem preis_euro ist labeled Data, weil der Zielwert vorhanden ist. Die gleiche Zeile ohne preis_euro ist unlabeled Data, weil nur Eingaben vorliegen und der Zielwert erst durch das trainierte Modell vorhergesagt werden soll.`
+
 ## Hilfekarten
 
 - Hilfe 1 (Impuls): Darf das Modell Testdaten beim Lernen sehen?

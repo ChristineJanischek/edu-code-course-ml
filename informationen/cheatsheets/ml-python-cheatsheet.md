@@ -80,6 +80,23 @@ le = LabelEncoder()
 y = le.fit_transform(y)
 ```
 
+## Labeled vs unlabeled Data (Praxis)
+
+- Labeled Data: Eingaben plus bekannter Zielwert.
+- Unlabeled Data: Eingaben ohne Zielwert.
+
+Beispiel (Hauspreise):
+
+- labeled: `groesse_m2=95, zimmer=3, baujahr=2015, preis_euro=310000`
+- unlabeled: `groesse_m2=95, zimmer=3, baujahr=2015, preis_euro=?`
+
+Mini-Checkliste fuer Aufgaben:
+
+- 1) Zielspalte bestimmen (bei Regression oft Preis/Umsatz/Temperatur).
+- 2) Hat die Zeile einen Zielwert? Ja -> labeled, Nein -> unlabeled.
+- 3) labeled Daten fuer Training verwenden.
+- 4) unlabeled Daten erst nach dem Training fuer Vorhersagen nutzen.
+
 ## scikit-learn: Bewertung
 
 ```python
@@ -97,17 +114,17 @@ r2_score(y_test, vorhersagen)           # R²-Koeffizient (0–1, höher = besse
 ## Regression: MSE und R2 richtig lesen
 
 - MSE (Mean Squared Error):
-- Formel: Mittelwert von $(y_i - \hat{y}_i)^2$.
-- Bedeutung: Fehler werden quadriert, grosse Ausreisser fallen stark ins Gewicht.
-- Ziel: kleiner ist besser.
-- Hinweis: Die Einheit ist Zielwert^2 (z. B. Euro^2). Deshalb MSE nicht mit anderen Zielgroessen mischen.
+  - Formel: Mittelwert von $(y_i - \hat{y}_i)^2$.
+  - Bedeutung: Fehler werden quadriert, grosse Ausreisser fallen stark ins Gewicht.
+  - Ziel: kleiner ist besser.
+  - Hinweis: Die Einheit ist Zielwert^2 (z. B. Euro^2). Deshalb MSE nicht mit anderen Zielgroessen mischen.
 
 - R2 (Bestimmtheitsmass):
-- Bedeutung: Anteil der Zielwert-Varianz, den das Modell erklaert.
-- Wertebereich in der Praxis: kann negativ sein bis maximal 1.0.
-- Daumenregel: nahe 1.0 sehr gut, nahe 0.0 kaum besser als Mittelwert, kleiner 0.0 schlechter als Mittelwert.
+  - Bedeutung: Anteil der Zielwert-Varianz, den das Modell erklaert.
+  - Wertebereich in der Praxis: kann negativ sein bis maximal 1.0.
+  - Daumenregel: nahe 1.0 sehr gut, nahe 0.0 kaum besser als Mittelwert, kleiner 0.0 schlechter als Mittelwert.
 
 - In Aufgaben wie A3 immer so interpretieren:
-- 1) Modell/Parameter gleich halten.
-- 2) Nur einen Faktor aendern (z. B. Datenmenge).
-- 3) MSE und R2 gemeinsam bewerten, nicht nur eine Kennzahl isoliert.
+  - 1) Modell/Parameter gleich halten.
+  - 2) Nur einen Faktor aendern (z. B. Datenmenge).
+  - 3) MSE und R2 gemeinsam bewerten, nicht nur eine Kennzahl isoliert.
