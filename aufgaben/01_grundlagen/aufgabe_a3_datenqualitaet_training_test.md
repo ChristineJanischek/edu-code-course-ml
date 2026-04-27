@@ -28,6 +28,14 @@
 - Hilfe 2 (Strategie): Halte Modell und Parameter konstant, variiere nur die Datenmenge.
 - Hilfe 3 (Fachhilfe): labeled Data enthalten Zielwerte, unlabeled Data nicht.
 
+## Kennzahlenhilfe (MSE und R2)
+
+- MSE (Mean Squared Error): Durchschnitt der quadrierten Fehler zwischen echtem Preis und Vorhersage.
+- Interpretation MSE: Je kleiner, desto besser. Einheit ist Preis^2, daher ist MSE vor allem fuer den Vergleich von Modellen auf demselben Datensatz geeignet.
+- R2 (Bestimmtheitsmass): Anteil der erklaerten Varianz im Zielwert.
+- Interpretation R2: Je naeher an 1.0, desto besser. 0.0 bedeutet "nicht besser als Mittelwert", negative Werte bedeuten "schlechter als Mittelwert".
+- Wichtig fuer A3: Vergleiche immer MSE und R2 gemeinsam und nur bei gleichem Zielwert, gleichem Split und gleichem Modell.
+
 ## Abgabe
 
 - Notebook-Auswertung mit Kennzahlenvergleich

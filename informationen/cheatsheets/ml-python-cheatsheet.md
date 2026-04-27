@@ -93,3 +93,21 @@ confusion_matrix(y_test, vorhersagen)   # Konfusionsmatrix
 mean_squared_error(y_test, vorhersagen) # Mittlerer quadratischer Fehler
 r2_score(y_test, vorhersagen)           # R²-Koeffizient (0–1, höher = besser)
 ```
+
+## Regression: MSE und R2 richtig lesen
+
+- MSE (Mean Squared Error):
+- Formel: Mittelwert von $(y_i - \hat{y}_i)^2$.
+- Bedeutung: Fehler werden quadriert, grosse Ausreisser fallen stark ins Gewicht.
+- Ziel: kleiner ist besser.
+- Hinweis: Die Einheit ist Zielwert^2 (z. B. Euro^2). Deshalb MSE nicht mit anderen Zielgroessen mischen.
+
+- R2 (Bestimmtheitsmass):
+- Bedeutung: Anteil der Zielwert-Varianz, den das Modell erklaert.
+- Wertebereich in der Praxis: kann negativ sein bis maximal 1.0.
+- Daumenregel: nahe 1.0 sehr gut, nahe 0.0 kaum besser als Mittelwert, kleiner 0.0 schlechter als Mittelwert.
+
+- In Aufgaben wie A3 immer so interpretieren:
+- 1) Modell/Parameter gleich halten.
+- 2) Nur einen Faktor aendern (z. B. Datenmenge).
+- 3) MSE und R2 gemeinsam bewerten, nicht nur eine Kennzahl isoliert.

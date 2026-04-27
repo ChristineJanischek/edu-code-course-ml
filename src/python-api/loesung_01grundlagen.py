@@ -50,5 +50,24 @@ print("Günstigster Preis:", guenstigster_preis)
 
 #Aufgabe d)
 #Histogramm der Hauspreise
-plt.hist(df["preis_euro"], bins=20,color="steelblue", edgecolor="black")
+# Histogramm der Preise
+plt.figure()
+plt.hist(df["preis_euro"], bins=20, color="steelblue", edgecolor="black")
+plt.xlabel("Preis (Euro)")
+plt.ylabel("Anzahl")
+plt.title("Verteilung der Hauspreise")
+plt.tight_layout()
+plt.show()
+
+#Lösung: Verteilung der Hauspreise zeigt. 
+# Die x-Achse repräsentiert die Preise in Euro, 
+# während die y-Achse die Anzahl der Häuser in den jeweiligen 
+# Preisintervallen darstellt.
+# Streudiagramm: Größe vs. Preis
+plt.figure()
+plt.scatter(df["groesse_m2"], df["preis_euro"], alpha=0.5, color="steelblue")
+plt.xlabel("Größe (m²)")
+plt.ylabel("Preis (Euro)")
+plt.title("Hausgröße vs. Preis")
+plt.tight_layout()
 plt.show()
