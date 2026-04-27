@@ -4,6 +4,8 @@ Dieses Verzeichnis enthält automatisierte Tests, mit denen Schüler ihre Lösun
 
 ## Struktur
 
+<div style="background-color: #f0f0f0; padding: 10px 14px; border-radius: 6px; font-family: monospace; border-left: 3px solid #cccccc;">
+
 ```
 tests/
 ├── 01_grundlagen/
@@ -21,15 +23,19 @@ tests/
 	└── test_live_stack.sh
 ```
 
+</div>
+
 ## BPE-6/7-Abdeckung
 
 - A1: Einstieg KI/ML und Python
 - A2: Verfahrensvergleich (Regression, Entscheidungsbaum, k-Means, k-NN)
-- A3: Datenqualitaet, Training/Test, labeled/unlabeled
+- A3: Datenqualität, Training/Test, labeled/unlabeled
 - B1/B2: Visualisierung und Einsatz von KI-Programmbibliotheken
 - B3/B4: Toolauswahl und Anwendungsprojekt im BWL-Kontext
 
 ## Tests ausführen
+
+<div style="background-color: #f0f0f0; padding: 10px 14px; border-radius: 6px; font-family: monospace; border-left: 3px solid #cccccc;">
 
 ```bash
 # Alle Tests
@@ -48,6 +54,8 @@ chmod +x tests/live/test_live_stack.sh
 chmod +x tests/live/security_smoke.sh
 ./tests/live/security_smoke.sh
 ```
+
+</div>
 
 ## Hinweise für Schüler
 

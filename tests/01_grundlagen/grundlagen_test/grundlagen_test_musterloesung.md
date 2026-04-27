@@ -1,4 +1,4 @@
-# Musterloesung: Grundlagen-Test (KI/ML und Python)
+# Musterlösung: Grundlagen-Test (KI/ML und Python)
 
 - Gesamtpunkte: 25
 - Theorie: 17,5 Punkte
@@ -8,9 +8,11 @@
 
 ### Aufgabe A1: Begriffe sicher unterscheiden (6 Punkte)
 
-Aufgabenstellung:
+<div style="background-color: #f6f8fa; padding: 10px 12px; border-radius: 6px; border: 1px solid #e1e4e8;">
+**Aufgabenstellung:**
 
-Ergaenze die Tabelle mit einer kurzen Definition und einem passenden Beispiel.
+
+Ergänze die Tabelle mit einer kurzen Definition und einem passenden Beispiel.
 
 | Begriff | Kurzdefinition | Beispiel aus Alltag oder Wirtschaft |
 |---|---|---|
@@ -18,81 +20,97 @@ Ergaenze die Tabelle mit einer kurzen Definition und einem passenden Beispiel.
 | Machine Learning |  |  |
 | Deep Learning |  |  |
 
-Musterloesung:
+Musterlösung:
 
 | Begriff | Kurzdefinition | Beispiel aus Alltag oder Wirtschaft |
 |---|---|---|
-| KI | Oberbegriff fuer Systeme, die Aufgaben mit intelligentem Verhalten loesen. | Chatbot im Kundenservice beantwortet Standardanfragen. |
+| KI | Oberbegriff für Systeme, die Aufgaben mit intelligentem Verhalten lösen. | Chatbot im Kundenservice beantwortet Standardanfragen. |
 | Machine Learning | Teilgebiet der KI: Modelle lernen Muster aus Daten statt nur fester Regeln. | Spamfilter lernt aus markierten E-Mails. |
-| Deep Learning | Teilgebiet von ML mit mehrschichtigen neuronalen Netzen. | Bilderkennung in einer Qualitaetskontrolle. |
+| Deep Learning | Teilgebiet von ML mit mehrschichtigen neuronalen Netzen. | Bilderkennung in einer Qualitätskontrolle. |
 
 Punktevergabe:
 - Pro Zeile 2 Punkte: 1 Punkt Definition, 1 Punkt passendes Beispiel.
 
+</div>
+
 ### Aufgabe A2: Regelbasiert vs. datenbasiert (3 Punkte)
 
-Aufgabenstellung:
+<div style="background-color: #f6f8fa; padding: 10px 12px; border-radius: 6px; border: 1px solid #e1e4e8;">
+**Aufgabenstellung:**
 
-1. Erklaere den Unterschied zwischen regelbasierter und datenbasierter Loesung in 2-4 Saetzen. (2 Punkte)
-2. Nenne ein konkretes Beispiel fuer beide Ansaetze. (1 Punkt)
 
-Musterloesung:
+1. Erkläre den Unterschied zwischen regelbasierter und datenbasierter Lösung in 2-4 Sätzen. (2 Punkte)
+2. Nenne ein konkretes Beispiel für beide Ansätze. (1 Punkt)
 
-- Regelbasiert bedeutet: Entscheidungen erfolgen ueber feste Wenn-Dann-Regeln, die von Menschen vorgegeben werden.
-- Datenbasiert bedeutet: Ein Modell lernt Zusammenhaenge aus Beispieldaten und trifft darauf basierend Vorhersagen.
-- Beispiel regelbasiert: Wenn Rechnungsbetrag > 1000 Euro, dann zweite Freigabe noetig.
-- Beispiel datenbasiert: Modell schaetzt Hauspreise aus Wohnflaeche, Zimmern und Baujahr.
+Musterlösung:
+
+- Regelbasiert bedeutet: Entscheidungen erfolgen über feste Wenn-Dann-Regeln, die von Menschen vorgegeben werden.
+- Datenbasiert bedeutet: Ein Modell lernt Zusammenhänge aus Beispieldaten und trifft darauf basierend Vorhersagen.
+- Beispiel regelbasiert: Wenn Rechnungsbetrag > 1000 Euro, dann zweite Freigabe nötig.
+- Beispiel datenbasiert: Modell schätzt Hauspreise aus Wohnfläche, Zimmern und Baujahr.
 
 Punktevergabe:
-- 2 Punkte fuer korrekte Erklaerung (beide Ansaetze klar abgegrenzt).
-- 1 Punkt fuer mindestens ein korrektes Beispiel je Ansatz (oder ein sehr gutes Vergleichsbeispiel).
+- 2 Punkte für korrekte Erklärung (beide Ansätze klar abgegrenzt).
+- 1 Punkt für mindestens ein korrektes Beispiel je Ansatz (oder ein sehr gutes Vergleichsbeispiel).
+
+</div>
 
 ### Aufgabe A3: Training, Test, labeled, unlabeled (5,5 Punkte)
 
-Aufgabenstellung:
+<div style="background-color: #f6f8fa; padding: 10px 12px; border-radius: 6px; border: 1px solid #e1e4e8;">
+**Aufgabenstellung:**
 
-1. Warum muessen Trainingsdaten und Testdaten getrennt sein? (2 Punkte)
-2. Erklaere labeled Data und unlabeled Data jeweils mit einem Beispiel aus dem Hauspreis-Kontext. (2 Punkte)
-3. Darf ein Modell Testdaten beim Lernen sehen? Begruende kurz. (1,5 Punkte)
 
-Musterloesung:
+1. Warum müssen Trainingsdaten und Testdaten getrennt sein? (2 Punkte)
+2. Erkläre labeled Data und unlabeled Data jeweils mit einem Beispiel aus dem Hauspreis-Kontext. (2 Punkte)
+3. Darf ein Modell Testdaten beim Lernen sehen? Begründe kurz. (1,5 Punkte)
 
-1. Training und Test muessen getrennt sein, damit fair geprueft wird, ob das Modell auf unbekannten Daten funktioniert. Sonst waere das Ergebnis zu optimistisch.
+Musterlösung:
+
+1. Training und Test müssen getrennt sein, damit fair geprüft wird, ob das Modell auf unbekannten Daten funktioniert. Sonst wäre das Ergebnis zu optimistisch.
 2. labeled Data im Hauskontext: Eingaben (groesse_m2, zimmer, baujahr) plus Zielwert preis_euro. unlabeled Data: gleiche Eingaben, aber ohne preis_euro.
-3. Testdaten duerfen nicht beim Lernen verwendet werden, weil sonst Informationsleck (Data Leakage) entsteht und die Bewertung unzuverlaessig wird.
+3. Testdaten dürfen nicht beim Lernen verwendet werden, weil sonst Informationsleck (Data Leakage) entsteht und die Bewertung unzuverlässig wird.
 
 Punktevergabe:
-- 2 Punkte fuer gute Begruendung der Trennung.
-- 2 Punkte fuer korrekte Definition + Beispiel labeled/unlabeled.
-- 1,5 Punkte fuer klare Antwort auf Testdatenfrage mit Begruendung.
+- 2 Punkte für gute Begründung der Trennung.
+- 2 Punkte für korrekte Definition + Beispiel labeled/unlabeled.
+- 1,5 Punkte für klare Antwort auf Testdatenfrage mit Begründung.
 
-### Aufgabe A4: Datenmenge und Datenqualitaet bewerten (3 Punkte)
+</div>
 
-Aufgabenstellung:
+### Aufgabe A4: Datenmenge und Datenqualität bewerten (3 Punkte)
+
+<div style="background-color: #f6f8fa; padding: 10px 12px; border-radius: 6px; border: 1px solid #e1e4e8;">
+**Aufgabenstellung:**
+
 
 Ein Team trainiert dasselbe Regressionsmodell zweimal:
-- Lauf 1: 20 Datensaetze
-- Lauf 2: vollstaendiger Datensatz
+- Lauf 1: 20 Datensätze
+- Lauf 2: vollständiger Datensatz
 
-Bewerte in 4-6 Saetzen, wie sich Datenmenge und Datenqualitaet auf MSE und R2 auswirken koennen. (3 Punkte)
+Bewerte in 4-6 Sätzen, wie sich Datenmenge und Datenqualität auf MSE und R2 auswirken können. (3 Punkte)
 
-Musterloesung:
+Musterlösung:
 
-- Bei nur 20 Datensaetzen lernt das Modell oft instabil und verallgemeinert schlechter.
+- Bei nur 20 Datensätzen lernt das Modell oft instabil und verallgemeinert schlechter.
 - Mit mehr Daten werden Muster besser erfasst, wodurch MSE typischerweise sinkt und R2 steigen kann.
-- Schlechte Datenqualitaet (Ausreisser, fehlende Werte, falsche Einheiten) kann die Guete trotz grosser Datenmenge verschlechtern.
-- Gute Datenqualitaet und ausreichende Datenmenge zusammen liefern meist robustere Vorhersagen.
+- Schlechte Datenqualität (Ausreisser, fehlende Werte, falsche Einheiten) kann die Güte trotz grosser Datenmenge verschlechtern.
+- Gute Datenqualität und ausreichende Datenmenge zusammen liefern meist robustere Vorhersagen.
 
 Punktevergabe:
 - 1 Punkt: Effekt der Datenmenge.
-- 1 Punkt: Effekt der Datenqualitaet.
+- 1 Punkt: Effekt der Datenqualität.
 - 1 Punkt: Bezug zu MSE/R2 fachlich korrekt.
+
+</div>
 
 ## Teil B: Praxis (7,5 Punkte)
 
 ### Aufgabe B1: Python/Pandas-Grundablauf (7,5 Punkte)
 
-Aufgabenstellung:
+<div style="background-color: #f6f8fa; padding: 10px 12px; border-radius: 6px; border: 1px solid #e1e4e8;">
+**Aufgabenstellung:**
+
 
 Schreibe den Code handschriftlich oder in sauberem Pseudocode. Nutze folgende Annahme:
 - Dateiname: ../notebooks/daten/haeuser.csv
@@ -102,7 +120,11 @@ Schreibe den Code handschriftlich oder in sauberem Pseudocode. Nutze folgende An
 2. Berechne den durchschnittlichen, minimalen und maximalen Hauspreis. (2,5 Punkte)
 3. Teile die Daten in Training/Test (80/20), trainiere eine lineare Regression und gib MSE und R2 aus. (3 Punkte)
 
-Musterloesung:
+Musterlösung:
+
+</div>
+
+<div style="background-color: #f0f0f0; padding: 10px 14px; border-radius: 6px; font-family: monospace; border-left: 3px solid #cccccc;">
 
 ```python
 import pandas as pd
@@ -138,13 +160,15 @@ print("MSE:", mse)
 print("R2:", r2)
 ```
 
+</div>
+
 Punktevergabe:
 - 2 Punkte: CSV korrekt geladen, `head()` ausgegeben.
 - 2,5 Punkte: Mittelwert, Minimum, Maximum korrekt aus `preis_euro` berechnet.
 - 3 Punkte: korrekter 80/20-Split, lineare Regression trainiert, MSE und R2 ausgegeben.
 
-## Korrekturhinweis fuer handschriftliche Loesungen
+## Korrekturhinweis für handschriftliche Lösungen
 
 - Fachlogik geht vor perfekter Syntax.
-- Leichte Schreibfehler in Variablennamen koennen toleriert werden, wenn der Ablauf klar und richtig ist.
+- Leichte Schreibfehler in Variablennamen können toleriert werden, wenn der Ablauf klar und richtig ist.
 - Auch strukturierter Pseudocode kann voll bewertet werden, wenn alle geforderten Schritte vorhanden sind.
