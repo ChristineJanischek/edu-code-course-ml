@@ -4,6 +4,8 @@
 **Dauer:** 3 Unterrichtsstunden  
 **Niveau:** Standard bis erweitert
 
+**Hilfsmittel:** [Neuronale Netze (Schnellstart)](../../informationen/grundlagen/ki-und-ml.md#schnellstart-neuronale-netze-fuer-a4-und-tests), [KI/ML-Grundlagen](../../informationen/grundlagen/ki-und-ml.md)
+
 ## Lernziele
 
 - Grundidee neuronaler Netze verstaendlich darstellen.
@@ -12,7 +14,7 @@
 
 ## Schritt-fuer-Schritt (Pflichtpfad)
 
-1. Erstelle eine Skizze: Eingabeschicht, verdeckte Schicht, Ausgabeschicht.
+1. Lies zuerst den Abschnitt [Schnellstart: Neuronale Netze fuer A4 und Tests](../../informationen/grundlagen/ki-und-ml.md#schnellstart-neuronale-netze-fuer-a4-und-tests). Erstelle danach eine Skizze: Eingabeschicht, verdeckte Schicht, Ausgabeschicht.
 2. Erklaere in 6 bis 8 Saetzen, wie ein einfaches Netz zu einer Entscheidung kommt.
 3. Recherchiere drei aktuelle KI-Entwicklungen (letzte 12 Monate).
 4. Ordne jede Entwicklung einem Bereich zu: ML, Deep Learning, Language Processing.

@@ -152,6 +152,73 @@ Im ML sind algorithmische Verfahren konkrete Lernmethoden, mit denen Muster erka
 
 Machine Learning nutzt algorithmische Verfahren, um aus Daten zu lernen und begruendete Vorhersagen oder Entscheidungen zu treffen.
 
+## Schnellstart: Neuronale Netze fuer A4 und Tests
+
+Dieser Abschnitt ist eine kompakte Lernhilfe fuer A4 und fuer die Selbstkontrolle in den Tests.
+
+### Einordnung
+
+- Kuenstliche Intelligenz (KI): Oberbegriff fuer Systeme mit intelligent wirkendem Verhalten.
+- Machine Learning (ML): Teilgebiet der KI, bei dem Modelle aus Daten lernen.
+- Neuronale Netze: Teilgebiet des ML; sie sind von der Idee biologischer Nervennetze inspiriert, arbeiten aber als mathematische Modelle.
+
+### Aufbau eines einfachen neuronalen Netzes
+
+Ein einfaches neuronales Netz besteht aus mehreren Schichten:
+
+1. Eingabeschicht (Input Layer)
+  - nimmt Daten auf, z. B. Pixel eines Bildes
+2. Verdeckte Schichten (Hidden Layers)
+  - verarbeiten die Eingaben und erkennen Muster
+3. Ausgabeschicht (Output Layer)
+  - liefert das Ergebnis, z. B. `Katze` oder `kein Hund`
+
+Jedes kuenstliche Neuron:
+
+- erhaelt Eingaben
+- gewichtet diese
+- berechnet einen neuen Wert
+- gibt ein Signal weiter
+
+### Wie lernt ein neuronales Netz?
+
+Vereinfacht laeuft das Training so ab:
+
+1. Eingabedaten werden durch das Netz geschickt.
+2. Das Netz erzeugt eine Vorhersage.
+3. Die Vorhersage wird mit der richtigen Loesung verglichen.
+4. Ein Fehlerwert wird berechnet.
+5. Die Gewichte werden angepasst, damit der Fehler kleiner wird.
+
+Wichtig:
+Dieses Lernen erfolgt ueber viele Wiederholungen mit Trainingsdaten.
+
+### Einfaches Beispiel
+
+Ein neuronales Netz soll erkennen, ob ein Bild eine Katze zeigt:
+
+- Eingabe: Pixelwerte eines Bildes
+- Hidden Layers: erkennen z. B. Kanten, Formen und Kombinationen von Merkmalen
+- Ausgabe: `Katze` oder `keine Katze`
+
+Mit vielen passenden Trainingsdaten verbessert sich die Vorhersage oft deutlich.
+
+### Typische Eigenschaften
+
+- erkennt komplexe Muster
+- besonders nuetzlich fuer Bilder, Sprache und Texte
+- Grundlage vieler moderner KI-Anwendungen, z. B. Sprachassistenten oder Bildanalyse
+
+### Entscheidungshilfe fuer A4
+
+- Geht es um einfache Grundidee und Aufbau? -> Schichten und Gewichte erklaeren
+- Geht es um das Lernen? -> Vorhersage, Fehler, Gewichtsanpassung beschreiben
+- Geht es um Einordnung? -> Neuronale Netze als Teil von ML und Deep Learning nennen
+
+### Merksatz fuer den Kurs
+
+Neuronale Netze sind lernende Modelle mit verbundenen kuenstlichen Neuronen, die durch Anpassung ihrer Gewichte Muster in Daten erkennen.
+
 ## Lernblock 1 (3 LPE): KI im Alltag, Chancen und Grenzen
 
 ### Kerninhalte

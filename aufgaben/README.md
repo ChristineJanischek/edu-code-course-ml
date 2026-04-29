@@ -37,6 +37,7 @@ aufgaben/
 - Lies jede Aufgabe vollstaendig vor dem Start.
 - Nutze vor A1/A3 das [Daten-Grundlagen Kurzblatt](../informationen/grundlagen/daten-grundlagen-kurz.md) als 1-Seiten-Einstieg.
 - Nutze vor A2 den Abschnitt [Schnellstart: Algorithmische Verfahren fuer A2 und Tests](../informationen/grundlagen/ki-und-ml.md#schnellstart-algorithmische-verfahren-fuer-a2-und-tests).
+- Nutze vor A4 den Abschnitt [Schnellstart: Neuronale Netze fuer A4 und Tests](../informationen/grundlagen/ki-und-ml.md#schnellstart-neuronale-netze-fuer-a4-und-tests).
 - Nutze den Marschplan in `../informationen/lehrplan/marschplan-ki-ml.md` als Leitfaden.
 - Bearbeite die praktischen Teile in `../notebooks/`.
 - Verwende gestufte Hilfen (Impuls, Strategie, Fachhilfe), bevor du eine Musterloesung oeffnest.
