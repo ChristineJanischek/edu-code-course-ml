@@ -2,7 +2,7 @@
 
 **Schwierigkeit:** Einsteiger  
 **Thema:** Datenanalyse  
-**Hilfsmittel:** [Python-Grundlagen](../../informationen/python/python-grundlagen.md), [Cheatsheet](../../informationen/cheatsheets/ml-python-cheatsheet.md)
+**Hilfsmittel:** [Python-Grundlagen](../../informationen/python/python-grundlagen.md), [Cheatsheet](../../informationen/cheatsheets/ml-python-cheatsheet.md), [Daten-Grundlagen (Schnellstart)](../../informationen/grundlagen/ki-und-ml.md#schnellstart-daten-grundlagen-fuer-aufgaben-und-tests)
 
 ---
 

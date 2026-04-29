@@ -35,6 +35,7 @@ aufgaben/
 ## Hinweise fuer Schuelerinnen und Schueler
 
 - Lies jede Aufgabe vollstaendig vor dem Start.
+- Nutze vor A1/A3 das [Daten-Grundlagen Kurzblatt](../informationen/grundlagen/daten-grundlagen-kurz.md) als 1-Seiten-Einstieg.
 - Nutze den Marschplan in `../informationen/lehrplan/marschplan-ki-ml.md` als Leitfaden.
 - Bearbeite die praktischen Teile in `../notebooks/`.
 - Verwende gestufte Hilfen (Impuls, Strategie, Fachhilfe), bevor du eine Musterloesung oeffnest.

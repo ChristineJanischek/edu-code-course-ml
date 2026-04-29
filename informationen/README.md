@@ -19,6 +19,11 @@ Fuer den direkten Unterrichtseinsatz steht jetzt ein ausfuehrliches Skript mit B
 - [grundlagen/ki-und-ml.md](grundlagen/ki-und-ml.md)
 - [grundlagen/promptverlauf-grundlagen-ki-ml.md](grundlagen/promptverlauf-grundlagen-ki-ml.md) (vollstaendiger Promptverlauf + automatisch verdichtetes Grundlagenskript)
 
+Empfehlung fuer Schueler:
+
+- Starte mit dem Abschnitt [Schnellstart: Daten-Grundlagen fuer Aufgaben und Tests](grundlagen/ki-und-ml.md#schnellstart-daten-grundlagen-fuer-aufgaben-und-tests), bevor du A1/A3 und die zugehoerigen Tests bearbeitest.
+- Fuer eine schnelle Wiederholung nutze das [Daten-Grundlagen Kurzblatt (1 Seite)](grundlagen/daten-grundlagen-kurz.md).
+
 ### Einstieg: E-Learning testen
 
 Neu hier? Die vollständige Schritt-für-Schritt-Anleitung zum Einrichten und Testen des gesamten E-Learning-Environments findest du hier:

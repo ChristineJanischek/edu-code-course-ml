@@ -21,6 +21,83 @@ Es kombiniert Fachinhalte, Impulse, Begriffe, Mini-Aufgaben und Reflexion.
 3. Sicherung (10-15 Min): Mini-Aufgabe + gemeinsamer Check
 4. Transfer (5-10 Min): kurze Anwendung auf neuen Kontext
 
+## Schnellstart: Daten-Grundlagen fuer Aufgaben und Tests
+
+Dieser Abschnitt ist eine kompakte Lernhilfe fuer die Aufgaben in `aufgaben/` und die Selbstkontrolle in `tests/`.
+
+### Machine Learning und Artificial Intelligence (KI)
+
+- Artificial Intelligence (Kuenstliche Intelligenz, KI): Oberbegriff fuer Systeme, die Aufgaben mit intelligent wirkendem Verhalten ausfuehren.
+- Machine Learning (Maschinelles Lernen, ML): Teilgebiet der KI, bei dem Modelle Muster aus Daten lernen.
+
+Merksatz:
+KI ist das Gesamtfeld, ML ist eine wichtige Methode innerhalb der KI.
+
+### Warum Daten zentral sind
+
+Daten sind der Rohstoff von KI und ML. Ohne Daten kann ein Modell nicht lernen, keine Muster erkennen und keine belastbaren Vorhersagen machen.
+
+### Was sind Daten?
+
+Daten sind Informationen in verarbeitbarer Form.
+
+Beispiele:
+
+- Zahlen (z. B. Temperaturen, Preise)
+- Texte (z. B. Kommentare, Bewertungen)
+- Bilder (z. B. Produktfotos, Roentgenbilder)
+- Audio (z. B. Sprache, Geraeusche)
+
+### Arten von Daten
+
+1. Strukturierte Daten
+  - klar organisiert, meist tabellarisch
+  - Beispiel: Tabelle mit `groesse_m2`, `zimmer`, `baujahr`, `preis_euro`
+2. Unstrukturierte Daten
+  - keine feste Tabellenstruktur
+  - Beispiel: Freitext, Bilder, Videos
+
+### Trainingsdaten und Labels
+
+Viele ML-Verfahren arbeiten mit gelabelten Trainingsdaten:
+
+- Input (Eingabedaten), z. B. Hausgroesse, Zimmerzahl
+- Label (Zielwert), z. B. `preis_euro`
+
+Ohne Label kann ein supervised Modell nicht lernen, welcher Zielwert richtig ist.
+
+### Datenqualitaet: was geprueft werden sollte
+
+Gute Daten sind:
+
+- vollstaendig
+- korrekt
+- moeglichst aktuell
+- moeglichst repraesentativ und verzerrungsarm (Bias vermeiden)
+
+Wichtig:
+Schlechte Daten fuehren auch bei guten Algorithmen zu schlechten Ergebnissen.
+
+### Datenmenge richtig verstehen
+
+- Zu wenig Daten: hoehere Unsicherheit, instabile Modelle
+- Mehr passende Daten: oft bessere Generalisierung
+
+Praxisregel:
+Nicht nur die Menge zaehlt, sondern die Kombination aus Menge, Qualitaet und Passung zur Fragestellung.
+
+### Datenschutz und Ethik
+
+Beim Arbeiten mit Daten gelten immer Grundregeln:
+
+- persoenliche Daten schuetzen
+- Daten nur zweckgebunden und verantwortungsvoll verwenden
+- Verzerrungen erkennen und Diskriminierung vermeiden
+
+### Merksatz fuer den Kurs
+
+Daten sind der Rohstoff der KI: Qualitaet, Menge und Fairness der Daten bestimmen die Qualitaet des Modells.
+
 ## Lernblock 1 (3 LPE): KI im Alltag, Chancen und Grenzen
 
 ### Kerninhalte

@@ -59,6 +59,7 @@ chmod +x tests/live/security_smoke.sh
 
 ## Hinweise für Schüler
 
+- Vor dem Testlauf: Nutze das [Daten-Grundlagen Kurzblatt](../informationen/grundlagen/daten-grundlagen-kurz.md) fuer einen schnellen 1-Seiten-Check.
 - Die Tests prüfen, ob deine Lösung das richtige Ergebnis liefert
 - Ein ✓ (grün) bedeutet: Test bestanden
 - Ein ✗ (rot) bedeutet: Noch nicht korrekt – lies die Fehlermeldung genau

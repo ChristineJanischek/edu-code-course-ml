@@ -4,6 +4,8 @@
 **Dauer:** 3 Unterrichtsstunden  
 **Niveau:** Einstieg
 
+**Hilfsmittel:** [Daten-Grundlagen Kurzblatt](../../informationen/grundlagen/daten-grundlagen-kurz.md), [KI/ML-Grundlagen (ausfuehrlich)](../../informationen/grundlagen/ki-und-ml.md)
+
 ## Lernziele
 
 - KI, Machine Learning und Deep Learning korrekt unterscheiden.
@@ -12,7 +14,7 @@
 
 ## Schritt-fuer-Schritt (Pflichtpfad)
 
-1. Lies in [ki-und-ml.md](../../informationen/grundlagen/ki-und-ml.md) die Begriffe KI, ML, Deep Learning.
+1. Lies zuerst das [Daten-Grundlagen Kurzblatt](../../informationen/grundlagen/daten-grundlagen-kurz.md) und danach in [ki-und-ml.md](../../informationen/grundlagen/ki-und-ml.md) die Begriffe KI, ML, Deep Learning.
 2. Erstelle eine Tabelle mit drei Spalten: Begriff, Kurzdefinition, Beispiel aus Alltag oder Wirtschaft.
 3. Oeffne [01_einfuehrung.ipynb](../../notebooks/01_einfuehrung.ipynb) und fuehre alle Zellen aus.
 4. Passe in einer Zelle mindestens zwei Werte an (z. B. Preisliste) und beobachte die Aenderung.

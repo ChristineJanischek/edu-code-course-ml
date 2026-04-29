@@ -4,6 +4,8 @@
 **Dauer:** 4 Unterrichtsstunden  
 **Niveau:** Standard
 
+**Hilfsmittel:** [Daten-Grundlagen (Schnellstart)](../../informationen/grundlagen/ki-und-ml.md#schnellstart-daten-grundlagen-fuer-aufgaben-und-tests), [Cheatsheet](../../informationen/cheatsheets/ml-python-cheatsheet.md)
+
 ## Lernziele
 
 - Trainings- und Testdaten sicher unterscheiden und anwenden.
