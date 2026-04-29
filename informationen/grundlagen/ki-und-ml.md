@@ -98,6 +98,60 @@ Beim Arbeiten mit Daten gelten immer Grundregeln:
 
 Daten sind der Rohstoff der KI: Qualitaet, Menge und Fairness der Daten bestimmen die Qualitaet des Modells.
 
+## Schnellstart: Algorithmische Verfahren fuer A2 und Tests
+
+Dieser Abschnitt ist eine kompakte Lernhilfe fuer den Verfahrensvergleich in A2 und fuer die Selbstkontrolle in den Tests.
+
+### KI und ML kurz einordnen
+
+- Kuenstliche Intelligenz (KI): Oberbegriff fuer Systeme, die Aufgaben mit intelligent wirkendem Verhalten loesen.
+- Machine Learning (ML): Teilgebiet der KI, in dem Modelle aus Daten lernen statt nur feste Regeln auszufuehren.
+
+### Was sind algorithmische Verfahren?
+
+Ein Algorithmus ist eine Schritt-fuer-Schritt-Anleitung zur Problemloesung.
+Im ML sind algorithmische Verfahren konkrete Lernmethoden, mit denen Muster erkannt und Vorhersagen oder Entscheidungen getroffen werden.
+
+### Wichtige Lernarten und typische Verfahren
+
+1. Supervised Learning (ueberwachtes Lernen)
+  - arbeitet mit Eingaben plus bekannten Zielwerten (Labels)
+  - Ziel: Vorhersage von Zahlenwerten oder Klassen
+  - typische Verfahren im Kurs:
+    - lineare Regression (kontinuierliche Werte)
+    - Entscheidungsbaum (Klassifikation/Regression)
+    - k-NN (Klassifikation)
+    - neuronale Netze (je nach Aufbau fuer mehrere Aufgabentypen)
+
+2. Unsupervised Learning (unueberwachtes Lernen)
+  - arbeitet ohne vorgegebene Zielwerte
+  - Ziel: Strukturen und Gruppen finden
+  - typisches Verfahren im Kurs:
+    - k-Means (Clustering)
+
+3. Reinforcement Learning (bestaerkendes Lernen)
+  - lernt durch Belohnung und Bestrafung in einer Umgebung
+  - Ziel: moeglichst gute Strategie entwickeln
+  - Beispiel: Spielstrategie lernen
+
+### ML-Ablauf in 5 Schritten
+
+1. Daten sammeln und verstehen
+2. Verfahren passend zur Fragestellung waehlen
+3. Modell trainieren
+4. Modell testen und bewerten
+5. Vorhersagen/Entscheidungen reflektieren
+
+### Entscheidungshilfe fuer A2
+
+- Ziel ist ein Zahlenwert (z. B. Preis, Umsatz) -> Regression
+- Ziel ist eine Klasse (z. B. ja/nein, Spam/nicht Spam) -> Entscheidungsbaum oder k-NN
+- Es gibt keine Labels und du suchst Gruppen -> k-Means
+
+### Merksatz fuer den Kurs
+
+Machine Learning nutzt algorithmische Verfahren, um aus Daten zu lernen und begruendete Vorhersagen oder Entscheidungen zu treffen.
+
 ## Lernblock 1 (3 LPE): KI im Alltag, Chancen und Grenzen
 
 ### Kerninhalte

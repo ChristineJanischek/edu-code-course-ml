@@ -22,6 +22,7 @@ Fuer den direkten Unterrichtseinsatz steht jetzt ein ausfuehrliches Skript mit B
 Empfehlung fuer Schueler:
 
 - Starte mit dem Abschnitt [Schnellstart: Daten-Grundlagen fuer Aufgaben und Tests](grundlagen/ki-und-ml.md#schnellstart-daten-grundlagen-fuer-aufgaben-und-tests), bevor du A1/A3 und die zugehoerigen Tests bearbeitest.
+- Nutze fuer A2 den Abschnitt [Schnellstart: Algorithmische Verfahren fuer A2 und Tests](grundlagen/ki-und-ml.md#schnellstart-algorithmische-verfahren-fuer-a2-und-tests).
 - Fuer eine schnelle Wiederholung nutze das [Daten-Grundlagen Kurzblatt (1 Seite)](grundlagen/daten-grundlagen-kurz.md).
 
 ### Einstieg: E-Learning testen

@@ -60,6 +60,7 @@ chmod +x tests/live/security_smoke.sh
 ## Hinweise für Schüler
 
 - Vor dem Testlauf: Nutze das [Daten-Grundlagen Kurzblatt](../informationen/grundlagen/daten-grundlagen-kurz.md) fuer einen schnellen 1-Seiten-Check.
+- Vor A2-Tests: Nutze den Abschnitt [Schnellstart: Algorithmische Verfahren fuer A2 und Tests](../informationen/grundlagen/ki-und-ml.md#schnellstart-algorithmische-verfahren-fuer-a2-und-tests).
 - Die Tests prüfen, ob deine Lösung das richtige Ergebnis liefert
 - Ein ✓ (grün) bedeutet: Test bestanden
 - Ein ✗ (rot) bedeutet: Noch nicht korrekt – lies die Fehlermeldung genau

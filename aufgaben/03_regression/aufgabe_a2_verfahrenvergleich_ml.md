@@ -4,6 +4,8 @@
 **Dauer:** 5 Unterrichtsstunden  
 **Niveau:** Standard
 
+**Hilfsmittel:** [Algorithmische Verfahren (Schnellstart)](../../informationen/grundlagen/ki-und-ml.md#schnellstart-algorithmische-verfahren-fuer-a2-und-tests), [Cheatsheet](../../informationen/cheatsheets/ml-python-cheatsheet.md)
+
 ## Lernziele
 
 - Die vier verpflichtenden Verfahren korrekt beschreiben.
@@ -12,7 +14,7 @@
 
 ## Schritt-fuer-Schritt (Pflichtpfad)
 
-1. Oeffne [03_lineare_regression.ipynb](../../notebooks/03_lineare_regression.ipynb) und wiederhole die Regression.
+1. Lies den Abschnitt [Schnellstart: Algorithmische Verfahren fuer A2 und Tests](../../informationen/grundlagen/ki-und-ml.md#schnellstart-algorithmische-verfahren-fuer-a2-und-tests), dann oeffne [03_lineare_regression.ipynb](../../notebooks/03_lineare_regression.ipynb) und wiederhole die Regression.
 2. Ergaenze im Notebook je einen kurzen Vergleichseintrag:
    - Regression: Wann einsetzen?
    - Entscheidungsbaum: Vorteil und Risiko
