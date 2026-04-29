@@ -1,197 +1,107 @@
 # edu-code-course-ml
-Dieses Repo enthält die speziellen Kenntnisse (Aufgaben, Lösungen, Informationen, Tests) und eine vollständige Testumgebung zum besseren Verständnis der Künstlichen Intelligenz und im Speziellen des Machine Learning. Es richtet sich an Schüler und Lehrer mit Interesse an einem praxisnahen Unterricht.
 
-## Neu: Live testbare Anwendung im Hauptrepo
+Dieses Repository ist der Lern- und Arbeitsraum fuer den KI/ML-Kurs. Es fuehrt Schueler und Lehrkraefte schrittweise durch Aufgaben, Notebooks, Hilfsmaterialien und Selbsttests.
 
-Zusätzlich zum Template gibt es jetzt eine direkt im Hauptrepo ausführbare Docker-Umgebung mit "Hallo Welt" für:
+Ziel:
+- Aufgaben eigenstaendig bearbeiten
+- Tests zur Selbstkontrolle nutzen
+- den Kurs passend zum Ausbildungsjahr klar durchlaufen
 
-- Java
-- MySQL
-- Python
-- PHP
-- JavaScript
+## Marschplan in 6 Schritten
 
-Sie liegt in `src/` (Services und DB-Init), wird über `docker-compose.yml` im Repo-Root gestartet und mit einem Live-Test geprüft.
+1. Umgebung startklar machen:
+	- Nutze die Anleitung [informationen/werkzeuge/elearning-testen.md](informationen/werkzeuge/elearning-testen.md).
+2. Ausbildungsjahr waehlen:
+	- 1. Ausbildungsjahr -> BPE 6
+	- 2. Ausbildungsjahr -> BPE 7
+3. Aufgaben in der vorgegebenen Reihenfolge bearbeiten.
+4. Passende Notebooks und Hilfsmittel verwenden.
+5. Tests zur Selbstkontrolle ausfuehren.
+6. Erst danach bei Bedarf in die Musterloesungen schauen.
 
-Schritt-für-Schritt-Anleitung (E-Learning komplett testen): [informationen/werkzeuge/elearning-testen.md](informationen/werkzeuge/elearning-testen.md)
-Schritt-für-Schritt-Anleitung (Docker-Stack): [informationen/werkzeuge/live-test-anleitung.md](informationen/werkzeuge/live-test-anleitung.md)
-Lehrkraft-Kurzreferenz Tests (BPE 6/7): [informationen/werkzeuge/lehrkraft-test-kurzreferenz.md](informationen/werkzeuge/lehrkraft-test-kurzreferenz.md)
-Bewertungsmatrix A1-B4 (BPE 6/7): [informationen/lehrplan/bewertungsmatrix-a1-b4.md](informationen/lehrplan/bewertungsmatrix-a1-b4.md)
-Druckversion Bewertungsbogen A1-B4: [informationen/lehrplan/bewertungsbogen-a1-b4-druckversion.md](informationen/lehrplan/bewertungsbogen-a1-b4-druckversion.md)
-Kompaktbogen A1-B4 (2 Seiten): [informationen/lehrplan/bewertungsbogen-a1-b4-kompakt-2seiten.md](informationen/lehrplan/bewertungsbogen-a1-b4-kompakt-2seiten.md)
-Einzelbogen erweitert: [informationen/lehrplan/bewertungsbogen-einzelperson-erweitert.md](informationen/lehrplan/bewertungsbogen-einzelperson-erweitert.md)
-PDF-Exportversion A1-B4: [informationen/lehrplan/bewertungsbogen-a1-b4-pdf-export.md](informationen/lehrplan/bewertungsbogen-a1-b4-pdf-export.md)
-Branch-Protection-Checkliste: [informationen/werkzeuge/branch-protection-checkliste.md](informationen/werkzeuge/branch-protection-checkliste.md)
-Git-Freigabe und Backupstrategie: [informationen/werkzeuge/git-freigabe-backupstrategie.md](informationen/werkzeuge/git-freigabe-backupstrategie.md)
+## Welcher Teil ist fuer welches Ausbildungsjahr relevant?
 
-## Projektstruktur & Template
+### 1. Ausbildungsjahr: BPE 6
 
-Dieses Repo nutzt [edu-code-projecttemplate](https://github.com/ChristineJanischek/edu-code-projecttemplate) als Basis-Infrastruktur. Das Template stellt eine vollständige Laufzeitumgebung bereit (PHP-Webapp, Python-API, MySQL, Java) inklusive Scripts und Dokumentationsvorlagen.
+Im 1. Ausbildungsjahr bearbeitest du alle Aufgaben zu BPE 6 aus dem Marschplan:
 
-```
-edu-code-course-ml/
-├── src/              ← Neue live testbare Demo-Services (Java, Python, PHP, JS, MySQL-Init)
-├── docker-compose.yml← Startet die Root-Live-Umgebung
-├── template/         ← Submodule: edu-code-projecttemplate (Laufzeitumgebung)
-├── informationen/    ← Hilfsmittel für Schüler (Grundlagen, Cheatsheets, Werkzeuge)
-├── informationen/lehrplan/ ← Lernhorizont, Erwartungshorizont, Begrifflichkeiten, Themen
-├── aufgaben/         ← ML-Aufgaben für Schüler
-├── loesungen/        ← Musterlösungen
-├── notebooks/        ← Jupyter Notebooks
-├── tests/            ← Tests zu den Aufgaben
-└── README.md
-```
+| Modul | Thema | Aufgabe |
+|---|---|---|
+| A1 | KI/ML-Einstieg und Python | [aufgaben/01_grundlagen/aufgabe_a1_kursstart_python.md](aufgaben/01_grundlagen/aufgabe_a1_kursstart_python.md) |
+| A2 | Algorithmische Verfahren | [aufgaben/03_regression/aufgabe_a2_verfahrenvergleich_ml.md](aufgaben/03_regression/aufgabe_a2_verfahrenvergleich_ml.md) |
+| A3 | Datenqualitaet, Training/Test | [aufgaben/01_grundlagen/aufgabe_a3_datenqualitaet_training_test.md](aufgaben/01_grundlagen/aufgabe_a3_datenqualitaet_training_test.md) |
+| A4 | Neuronale Netze und Entwicklungen | [aufgaben/04_fortgeschritten/aufgabe_a4_neuronale_netze_und_trends.md](aufgaben/04_fortgeschritten/aufgabe_a4_neuronale_netze_und_trends.md) |
 
-## Schnellstart
+Passende Tests fuer BPE 6:
 
-### A) Neue Root-Live-Umgebung (empfohlen für schnellen Start)
+- [tests/01_grundlagen/](tests/01_grundlagen/)
+- [tests/03_regression/](tests/03_regression/)
+- Uebersicht und Hinweise in [tests/README.md](tests/README.md)
 
-```bash
-cp .env.example .env
-## CHANGE_ME-Werte in .env durch sichere Passwoerter ersetzen
-docker compose up -d --build
-chmod +x tests/live/test_live_stack.sh
-./tests/live/test_live_stack.sh
-chmod +x tests/live/security_smoke.sh
-./tests/live/security_smoke.sh
-```
+### 2. Ausbildungsjahr: BPE 7
 
-Wichtige URLs:
-- PHP: `http://localhost:8080`
-- JS-Web: `http://localhost:8081`
-- Python: `http://localhost:8000/health`
-- Java: `http://localhost:8082`
+Im 2. Ausbildungsjahr bearbeitest du alle Aufgaben zu BPE 7 aus dem Marschplan:
 
-Details: [informationen/werkzeuge/live-test-anleitung.md](informationen/werkzeuge/live-test-anleitung.md)
+| Modul | Thema | Aufgabe |
+|---|---|---|
+| B1 | Visualisierung grosser Datenmengen | [aufgaben/04_fortgeschritten/aufgabe_b1_visualisierung_grosse_daten.md](aufgaben/04_fortgeschritten/aufgabe_b1_visualisierung_grosse_daten.md) |
+| B2 | KI-Programmbibliotheken | [aufgaben/04_fortgeschritten/aufgabe_b2_ki_programmbibliotheken.md](aufgaben/04_fortgeschritten/aufgabe_b2_ki_programmbibliotheken.md) |
+| B3 | KI-Toolauswahl im BWL-Kontext | [aufgaben/04_fortgeschritten/aufgabe_b3_ki_toolauswahl_bwl.md](aufgaben/04_fortgeschritten/aufgabe_b3_ki_toolauswahl_bwl.md) |
+| B4 | Anwendungsprojekt BWL + KI | [aufgaben/04_fortgeschritten/aufgabe_b4_anwendungsprojekt_bwl_ki.md](aufgaben/04_fortgeschritten/aufgabe_b4_anwendungsprojekt_bwl_ki.md) |
 
-Sicherheit:
-- `.env` wird im Repo-Root per `.gitignore` ausgeschlossen.
-- Services sind nur an `127.0.0.1` gebunden.
-- Container laufen mit Security-Hardening (`no-new-privileges`, `cap_drop`, read-only wo sinnvoll).
-- CI-Sicherheits-Scans laufen in `.github/workflows/security-scans.yml`.
+Passende Tests fuer BPE 7:
 
-### B) Template-Umgebung (Submodule)
+- [tests/04_fortgeschritten/](tests/04_fortgeschritten/)
+- Uebersicht und Hinweise in [tests/README.md](tests/README.md)
 
-**1. Repo klonen (mit Submodule):**
-```bash
-git clone --recurse-submodules https://github.com/ChristineJanischek/edu-code-course-ml.git
-# oder nach einem normalen Clone:
-git submodule update --init --recursive
-```
+## Womit arbeite ich konkret?
 
-**2. Umgebung starten:**
-```bash
-cd template
-bash scripts/bootstrap.sh        # .env aus .env.example erstellen und anpassen
-bash scripts/start-services.sh   # Docker-Dienste starten
-```
+### Aufgaben
 
-**3. Services erreichbar unter:**
-- PHP-Webapp: `http://localhost:8080`
-- Python-API: `http://localhost:8000/health`
+- Alle Aufgaben liegen in [aufgaben/](aufgaben/).
+- Der Gesamtueberblick steht in [aufgaben/README.md](aufgaben/README.md).
 
-**4. Template aktualisieren (bei Änderungen am Original):**
-```bash
-git submodule update --remote template
-git commit -m "chore: template aktualisiert"
-git push
-```
+### Notebooks
 
----
+- Die begleitenden Notebooks liegen in [notebooks/](notebooks/).
+- Die empfohlene Reihenfolge steht in [notebooks/README.md](notebooks/README.md).
 
-## Umgang mit dem Template
+### Informationen und Hilfen
 
-### Was ist das Template?
+- Der zentrale Einstieg fuer Grundlagen und Werkzeuge steht in [informationen/README.md](informationen/README.md).
+- Besonders wichtig fuer BPE 6:
+  - [Daten-Grundlagen Kurzblatt](informationen/grundlagen/daten-grundlagen-kurz.md)
+  - [KI/ML-Grundlagen mit Schnellstarts](informationen/grundlagen/ki-und-ml.md)
+- Python-Hilfe: [informationen/python/python-grundlagen.md](informationen/python/python-grundlagen.md)
+- Kurzreferenz: [informationen/cheatsheets/ml-python-cheatsheet.md](informationen/cheatsheets/ml-python-cheatsheet.md)
 
-Das Template [edu-code-projecttemplate](https://github.com/ChristineJanischek/edu-code-projecttemplate) ist eine vorgefertigte Entwicklungsumgebung für Schulprojekte. Es liegt in diesem Repo unter `template/` und ist als **Git Submodule** eingebunden — d. h. es ist eine Verknüpfung zum Original-Repo, kein einfacher Ordner.
+### Tests
 
----
+- Die Test-Uebersicht und Startbefehle stehen in [tests/README.md](tests/README.md).
+- Lehrkraefte finden eine kompakte Testhilfe in [informationen/werkzeuge/lehrkraft-test-kurzreferenz.md](informationen/werkzeuge/lehrkraft-test-kurzreferenz.md).
 
-### Täglicher Umgang
+## Empfohlene Arbeitsreihenfolge
 
-#### Services starten und stoppen
-```bash
-cd template
+1. Aufgabe lesen.
+2. Passendes Hilfsmittel oeffnen.
+3. Notebook bearbeiten.
+4. Eigene Loesung fertigstellen.
+5. Test ausfuehren.
+6. Fehler auswerten und verbessern.
+7. Erst am Ende die Musterloesung vergleichen.
 
-# Starten (beim ersten Mal oder nach Änderungen)
-bash scripts/start-services.sh
+## Verbindlicher Kursrahmen
 
-# Stoppen
-bash scripts/stop-services.sh
-```
+Der inhaltliche Gesamtplan fuer beide Ausbildungsjahre steht in:
 
-#### Tests ausführen
-```bash
-cd template
+- [informationen/lehrplan/marschplan-ki-ml.md](informationen/lehrplan/marschplan-ki-ml.md)
 
-# Alle Services testen (PHP, Python-API, MySQL, Java)
-bash scripts/test-services.sh
+Kurzregel:
+- BPE 6 = 1. Ausbildungsjahr
+- BPE 7 = 2. Ausbildungsjahr
 
-# Nur Dokumentation prüfen
-bash scripts/validate-docs.sh
+## Administrative und technische Hinweise
 
-# Architektur prüfen (Java OOP-Regeln)
-bash scripts/validate-architecture.sh
+Technische Repo-Verwaltung, Template-Nutzung und Pflegehinweise wurden bewusst aus dieser README ausgelagert:
 
-# Sicherheit prüfen (.env, Credentials)
-bash scripts/validate-security.sh
-```
-
----
-
-### Neue Inhalte ergänzen (ML-Kurs)
-
-Das Template stellt die Infrastruktur bereit. Die eigentlichen ML-Kursinhalte kommen **nicht** in den `template/`-Ordner, sondern direkt ins Hauptverzeichnis:
-
-```
-aufgaben/          ← Neue Aufgabe hier anlegen
-loesungen/         ← Musterlösung hier ablegen
-notebooks/         ← Jupyter Notebook hier speichern
-tests/             ← Tests zur Aufgabe hier ergänzen
-```
-
-Curriculare Leitdokumente (Lernhorizont) liegen in `informationen/lehrplan/`.
-
-Die **Python-API** (`template/services/python-api/app.py`) kann für ML-Demos direkt erweitert werden.
-
----
-
-### Template-Änderungen übernehmen
-
-Wenn am Original-Template (`edu-code-projecttemplate`) etwas geändert wurde und du die Neuigkeiten übernehmen möchtest:
-
-```bash
-# Im Hauptverzeichnis des Repos
-git submodule update --remote template
-git add template
-git commit -m "chore: template auf neueste Version aktualisiert"
-git push
-```
-
-> **Wichtig:** Das Submodule verweist immer auf einen bestimmten Commit des Template-Repos. Nach `git submodule update --remote` zeigt es auf den neuesten Commit. Überprüfe vorher, ob Breaking Changes vorhanden sind.
-
----
-
-### Häufige Probleme
-
-| Problem | Lösung |
-|--------|--------|
-| `template/`-Ordner ist leer nach Clone | `git submodule update --init --recursive` ausführen |
-| `.env` fehlt | `cd template && bash scripts/bootstrap.sh` |
-| `.env` enthält noch `CHANGE_ME` | `template/.env` öffnen und Werte eintragen |
-| Docker-Services starten nicht | Docker Desktop läuft? `docker info` prüfen |
-| Port bereits belegt | In `template/.env` Port-Variablen anpassen (`PHP_WEB_PORT`, `PYTHON_API_PORT`) |
-
----
-
-### Übersicht der Template-Scripts
-
-| Script | Beschreibung |
-|--------|-------------|
-| `scripts/bootstrap.sh` | `.env` aus `.env.example` erzeugen, Rechte setzen |
-| `scripts/start-services.sh` | Docker-Dienste bauen und starten |
-| `scripts/stop-services.sh` | Docker-Dienste stoppen |
-| `scripts/test-services.sh` | Alle Services testen (HTTP, MySQL, Java) |
-| `scripts/validate-docs.sh` | Dokumentationspflicht prüfen |
-| `scripts/validate-architecture.sh` | Java-Architekturregeln prüfen |
-| `scripts/validate-security.sh` | Sicherheits-Check (Credentials, `.env`) |
+- [informationen/werkzeuge/repo-betrieb-und-template.md](informationen/werkzeuge/repo-betrieb-und-template.md)
