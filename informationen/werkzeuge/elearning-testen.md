@@ -65,6 +65,30 @@ cd edu-code-course-ml
 > git submodule update --init --recursive
 > ```
 
+### 2.1.1 Wiedereinstieg nach Unterbrechung (naechster Tag / anderer Rechner)
+
+So vermeidest du eine doppelte Ordnerstruktur wie `edu-code-course-ml/edu-code-course-ml`:
+
+```bash
+# 1) Pruefen, wo du gerade bist
+pwd
+
+# 2) Pruefen, ob du bereits in einem Git-Repo bist
+git rev-parse --show-toplevel
+```
+
+Interpretation:
+- Wenn `git rev-parse` einen Pfad ausgibt, bist du schon im Repo oder in einem Unterordner davon: **nicht erneut klonen**, sondern nur aktualisieren (`git pull`).
+- Wenn eine Fehlermeldung erscheint (kein Git-Repo), erst dann in den Elternordner wechseln und klonen.
+
+Sicherer Wiedereinstieg im bestehenden Repo:
+
+```bash
+cd /workspaces/edu-code-course-ml
+git pull
+git submodule update --init --recursive
+```
+
 ### 2.2 Umgebungsvariablen setzen
 
 ```bash
@@ -123,13 +147,26 @@ edu_ml_java_app       running
 
 **MySQL-Datenbank prüfen:**
 
+Wichtig: Lade zuerst die Werte aus `.env` in die aktuelle Shell. Sonst greifen Fallback-Werte (z. B. `edu_pass`), die oft **nicht** zum laufenden Container passen.
+
+```bash
+set -a
+source .env
+set +a
+```
+
 ```bash
 docker compose exec -T mysql \
-  mysql -u"${MYSQL_USER:-edu_user}" -p"${MYSQL_PASSWORD:-edu_pass}" "${MYSQL_DATABASE:-edu_demo}" \
+  mysql -u"${MYSQL_USER}" -p"${MYSQL_PASSWORD}" "${MYSQL_DATABASE}" \
   -e "SELECT * FROM hello_log LIMIT 5;"
 ```
 
 Es sollte mindestens ein Eintrag mit `Hallo Welt aus MySQL` erscheinen.
+
+Bei `ERROR 1045 (28000): Access denied`:
+- Prüfe, ob `.env` wirklich geladen wurde: `echo "$MYSQL_USER / $MYSQL_DATABASE"`
+- Falls `.env` nach dem ersten Start geändert wurde: `docker compose down -v && docker compose up -d --build`
+- Hinweis: `down -v` löscht lokale Datenbankdaten (im Unterricht meist unkritisch)
 
 ---
 
@@ -291,6 +328,7 @@ docker compose down
 | Problem | Ursache | Lösung |
 |---------|---------|--------|
 | `CHANGE_ME must be set` | `.env` nicht angepasst | Alle `CHANGE_ME` in `.env` durch echte Werte ersetzen |
+| `ERROR 1045 (28000): Access denied` bei MySQL-Check | Shell nutzt nicht die `.env`-Werte oder DB wurde mit alten Werten initialisiert | `set -a; source .env; set +a` und ggf. `docker compose down -v && docker compose up -d --build` |
 | Port bereits belegt | Anderer Prozess nutzt den Port | Port in `.env` ändern (z. B. `PHP_WEB_PORT=8090`) |
 | `health: starting` nach 2 Min. | Container startet langsam | `docker compose logs mysql` prüfen |
 | Notebook-Kernel startet nicht | Jupyter nicht installiert | `pip install notebook` |
