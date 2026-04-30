@@ -29,12 +29,12 @@ Erkläre folgende Begriffe und gib zu jedem ein Beispiel:
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Maschinenelles Lernen</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Machine Learning</td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Tiefe Netze</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Neuronale Netze</td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
     </tr>
@@ -58,12 +58,12 @@ Musterlösung:
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Automatische Fehlerdiagnose in Fabriken.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Maschinenelles Lernen</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Machine Learning</td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Teilbereich der KI, bei dem Algorithmen aus Beispieldaten automatisch Regeln ableiten.</td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Kreditvergabe-Entscheidungen basierend auf historischen Kreditnehmer-Daten.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Tiefe Netze</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Neuronale Netze</td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Neuronale Netze mit vielen Schichten, die komplexe, nichtlineare Muster lernen.</td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Automatische Handschrifterkennung bei Posteingangsblöcken.</td>
     </tr>
@@ -86,7 +86,7 @@ Punktevergabe:
 
 Musterlösung:
 
-1. Starr programmierte Systeme folgen unveränderlichen Regeln, die einmal geschrieben wurden. Lernende Systeme beobachten Daten und stellen Regeln selbst auf – sie passen sich also an neü Situationen an. Der Unterschied: Das eine ist statisch, das andere ist dynamisch.
+1. Starr programmierte Systeme folgen unveränderlichen Regeln, die einmal geschrieben wurden. Lernende Systeme beobachten Daten und stellen Regeln selbst auf - sie passen sich also an neue Situationen an. Der Unterschied: Das eine ist statisch, das andere ist dynamisch.
 
 2. Starr: "Wenn Note > 4.0, dann Durchfall." Lernend: Modell lernt aus hunderten von Notenverlauf-Beispielen, welche Kombination von Lernstunden und Anwesenheit zu guten Noten führt.
 
@@ -106,20 +106,20 @@ Szenario: Ein Unternehmen möchte Studierenden-Noten basierend auf Lernstunden, 
 
 1. Begründe, warum eine Aufteilung der Daten in Training und Test notwendig ist. (2 Punkte)
 2. Was sind labeled vs. unlabeled Data in diesem Kontext? Gib je ein Beispiel. (2 Punkte)
-3. Welche Fehlerqüllen entstehen, wenn Test-Beispiele (Noten) während des Trainings benutzt werden? (1,5 Punkte)
+3. Welche Fehlerquellen entstehen, wenn Test-Beispiele (Noten) während des Trainings benutzt werden? (1,5 Punkte)
 
 Musterlösung:
 
-1. Die Aufteilung stellt sicher, dass das Modell Noten für neü, unbekannte Studierenden fair vorhersagen kann. Mit getrennten Testdaten prüft man die echte Vorhersagekräft. Sonst könnte das Modell die Antworten nur auswendig lernen.
+1. Die Aufteilung stellt sicher, dass das Modell Noten für neue, unbekannte Studierende fair vorhersagen kann. Mit getrennten Testdaten prüft man die echte Vorhersagekraft. Sonst könnte das Modell die Antworten nur auswendig lernen.
 
-2. labeled Data: Ein Datensatz mit (5 Lernstunden, 90% Anwesenheit, 25 Übungen) → Note 1,7. unlabeled Data: Ein neür Studierender mit (6 Lernstunden, 85%, 30 Übungen), aber wir kennen die Note noch nicht – das Modell soll vorhersagen.
+2. labeled Data: Ein Datensatz mit (5 Lernstunden, 90% Anwesenheit, 25 Übungen) -> Note 1,7. unlabeled Data: Ein neuer Studierender mit (6 Lernstunden, 85%, 30 Übungen), aber wir kennen die Note noch nicht - das Modell soll vorhersagen.
 
-3. Wenn Test-Noten beim Trainingen verwendet werden, lernt das Modell die Lösung auswendig. MSE wird kiesnstlich niedrig, R2 kiesnstlich hoch. In der Praxis würden Vorhersagen für echte neü Studierenden dann deutlich schlechter.
+3. Wenn Test-Noten beim Training verwendet werden, lernt das Modell die Lösung auswendig. MSE wird künstlich niedrig, R2 künstlich hoch. In der Praxis würden Vorhersagen für echte neue Studierende dann deutlich schlechter.
 
 Punktevergabe:
 - 2 Punkte: Begründung verständlich (echte Vorhersagekraft prüfen).
 - 2 Punkte: klare Definition + Beispiel labeled/unlabeled im Noten-Kontext.
-- 1,5 Punkte: Fehlerqülle klar erkannt (Overfitting, Information Leakage, kiesnstliche Metriken).
+- 1,5 Punkte: Fehlerquelle klar erkannt (Overfitting, Information Leakage, künstliche Metriken).
 
 </div>
 
@@ -129,7 +129,7 @@ Punktevergabe:
 **Aufgabenstellung:**
 
 
-Ein Lehrerteam teste ein Noten-Vorhersage-Modell zweimal:
+Ein Lehrerteam testet ein Noten-Vorhersage-Modell zweimal:
 - Szenario A: 30 Studierenden-Datensätze
 - Szenario B: 300 Studierenden-Datensätze
 
@@ -137,14 +137,14 @@ Analysiere in 5-7 Sätzen, wie Datenmenge und Datenqualität (z. B. fehlerhafte 
 
 Musterlösung:
 
-- Mit nur 30 Datensätzen kann das Modell nicht alle Lernstile und -erfolgsaspekte erfassen. Es kann Überanpassung gibt: hohe Genauigkeit beim Training, schlechte Generaliserung.
-- 300 Datensätze zeigen mehr Variation in Lernmustern und Noten. Das Modell lernt bessere, allgemeinerbare Regeln. MSE bei Testdaten sinkt, R2 steigt.
+- Mit nur 30 Datensätzen kann das Modell nicht alle Lernstile und -erfolgsaspekte erfassen. Es kann zu Überanpassung kommen: hohe Genauigkeit beim Training, aber schlechte Generalisierung.
+- 300 Datensätze zeigen mehr Variation in Lernmustern und Noten. Das Modell lernt bessere, generalisierbare Regeln. MSE bei Testdaten sinkt, R2 steigt.
 - Fehlerhafte Anwesenheitsdaten (z. B. vertauschte Prozente) verfälschen das Verhältnis zwischen Anwesenheit und Note. Das Modell lernt die falsche Korrelation.
 - Daher: Viele Daten allein reichen nicht – auch Datenbestandteile/Qualität ist entscheidend.
 
 Punktevergabe:
-- 1 Punkt: Menge-Effekt erkannt (grössere Datenmenge → bessere Generaliserung).
-- 1 Punkt: Qualitäts-Effekt erkannt (Fehler verstellen Muster).
+- 1 Punkt: Menge-Effekt erkannt (größere Datenmenge -> bessere Generalisierung).
+- 1 Punkt: Qualitäts-Effekt erkannt (Fehler verzerren Muster).
 - 1 Punkt: Bezug zu MSE und R2, oder Verständnis für praktische Auswirkungen.
 
 </div>
@@ -217,5 +217,5 @@ Punktevergabe:
 ## Korrekturhinweis für handschriftliche Lösungen
 
 - Fachlogik zählt mehr als syntaktische Perfektion.
-- Verständliche Variablennamen, auch wenn sie küssungen kürsungen werden, sind akzeptabel.
-- Pseudocode oder stichwortartige Code-Fragmenty will accepted, wenn Logik und Schritte klar erkennbar sind.
+- Verständliche Variablennamen sind akzeptabel, wenn die Logik klar bleibt.
+- Pseudocode oder stichwortartige Code-Fragmente sind akzeptabel, wenn Logik und Schritte klar erkennbar sind.

@@ -33,12 +33,12 @@ Erkläre folgende Begriffe und gib zu jedem ein Beispiel:
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; min-width: 80px;"></td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; min-width: 80px;">Maschinenelles Lernen</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; min-width: 80px;">Machine Learning</td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; min-width: 80px;"></td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; min-width: 80px;"></td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; min-width: 80px;">Tiefe Netze</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; min-width: 80px;">Neuronale Netze</td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; min-width: 80px;"></td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; min-width: 80px;"></td>
     </tr>
@@ -67,7 +67,7 @@ Szenario: Ein Unternehmen möchte Studierenden-Noten basierend auf Lernstunden, 
 
 1. Begründe, warum eine Aufteilung der Daten in Training und Test notwendig ist. (2 Punkte)
 2. Was sind labeled vs. unlabeled Data in diesem Kontext? Gib je ein Beispiel. (2 Punkte)
-3. Welche Fehlerqüllen entstehen, wenn Test-Beispiele (Noten) während des Trainings benutzt werden? (1,5 Punkte)
+3. Welche Fehlerquellen entstehen, wenn Test-Beispiele (Noten) während des Trainings benutzt werden? (1,5 Punkte)
 
 <div style="background-color: #f6f8fa; padding: 10px 12px; border-radius: 6px; border: 1px solid #e1e4e8;">
 **Antwort:**
@@ -79,7 +79,7 @@ Szenario: Ein Unternehmen möchte Studierenden-Noten basierend auf Lernstunden, 
 
 ### Aufgabe A4: Menge und Qualität von Daten (3 Punkte)
 
-Ein Lehrerteam teste ein Noten-Vorhersage-Modell zweimal:
+Ein Lehrerteam testet ein Noten-Vorhersage-Modell zweimal:
 - Szenario A: 30 Studierenden-Datensätze
 - Szenario B: 300 Studierenden-Datensätze
 
