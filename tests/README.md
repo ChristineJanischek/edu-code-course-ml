@@ -33,6 +33,25 @@ tests/
 - B1/B2: Visualisierung und Einsatz von KI-Programmbibliotheken
 - B3/B4: Toolauswahl und Anwendungsprojekt im BWL-Kontext
 
+## Word-kopierbares Layout (Tests und Musterloesungen)
+
+- Neue Dokumente auf Basis von [VORLAGE_test_neu.md](VORLAGE_test_neu.md) erstellen.
+- Tabellen in Dokumenten als HTML-Tabellen belassen (keine Markdown-Tabellen mit `|...|`).
+- Code als normale fenced code blocks schreiben (```python ... ```), ohne zusaetzliche verschachtelte HTML-Wrapper.
+- Nach Erstellung oder Aenderung immer normalisieren:
+
+```bash
+python3 scripts/format_tests.py
+```
+
+- Der Standardlauf formatiert sowohl `tests/**/*.md` als auch `loesungen/**/*.md`.
+
+- Fuer Einzeldateien:
+
+```bash
+python3 scripts/format_tests.py tests/01_grundlagen/grundlagen_test/grundlagen_test_musterloesung.md
+```
+
 ## Tests ausführen
 
 <div style="background-color: #f0f0f0; padding: 10px 14px; border-radius: 6px; font-family: monospace; border-left: 3px solid #cccccc;">

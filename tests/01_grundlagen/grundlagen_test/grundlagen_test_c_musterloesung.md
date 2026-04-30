@@ -14,19 +14,61 @@
 
 Vergleiche folgende Konzepte in einer Tabelle:
 
-| Konzept | Definition | Anwendungsbeispiel |
-|---|---|---|
-| Intelligente Systeme |  |  |
-| Lernende Modelle |  |  |
-| Tiefes Lernen |  |  |
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 11pt;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Konzept</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Definition</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Anwendungsbeispiel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Intelligente Systeme</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Lernende Modelle</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Tiefes Lernen</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+  </tbody>
+</table>
 
 Musterlösung:
 
-| Konzept | Definition | Anwendungsbeispiel |
-|---|---|---|
-| Intelligente Systeme | Systeme, die Probleme lösen, Entscheidungen treffen oder lernen können. | Navigationssystem findet die schnellste Route. |
-| Lernende Modelle | Algorithmen, die Muster aus Trainingsdaten erfassen und damit Vorhersagen machen. | Vorhersage von Börsenkursen basierend auf historischen Daten. |
-| Tiefes Lernen | Machine-Learning-Methode mit vielen verschachtelten Schichten, ähnlich neuronalen Netzen. | Erkennung von Objekten in Bildern oder Gesichtserkennung. |
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 11pt;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Konzept</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Definition</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Anwendungsbeispiel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Intelligente Systeme</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Systeme, die Probleme lösen, Entscheidungen treffen oder lernen können.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Navigationssystem findet die schnellste Route.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Lernende Modelle</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Algorithmen, die Muster aus Trainingsdaten erfassen und damit Vorhersagen machen.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Vorhersage von Börsenkursen basierend auf historischen Daten.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Tiefes Lernen</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Machine-Learning-Methode mit vielen verschachtelten Schichten, ähnlich neuronalen Netzen.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Erkennung von Objekten in Bildern oder Gesichtserkennung.</td>
+    </tr>
+  </tbody>
+</table>
 
 Punktevergabe:
 - Pro Zeile 2 Punkte: 1 Punkt Definition, 1 Punkt Beispiel.

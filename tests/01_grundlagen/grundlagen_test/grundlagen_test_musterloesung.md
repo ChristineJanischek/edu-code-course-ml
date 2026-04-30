@@ -14,19 +14,61 @@
 
 Ergänze die Tabelle mit einer kurzen Definition und einem passenden Beispiel.
 
-| Begriff | Kurzdefinition | Beispiel aus Alltag oder Wirtschaft |
-|---|---|---|
-| KI |  |  |
-| Machine Learning |  |  |
-| Deep Learning |  |  |
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 11pt;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Begriff</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Kurzdefinition</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Beispiel aus Alltag oder Wirtschaft</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">KI</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Machine Learning</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Deep Learning</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+  </tbody>
+</table>
 
 Musterlösung:
 
-| Begriff | Kurzdefinition | Beispiel aus Alltag oder Wirtschaft |
-|---|---|---|
-| KI | Oberbegriff für Systeme, die Aufgaben mit intelligentem Verhalten lösen. | Chatbot im Kundenservice beantwortet Standardanfragen. |
-| Machine Learning | Teilgebiet der KI: Modelle lernen Muster aus Daten statt nur fester Regeln. | Spamfilter lernt aus markierten E-Mails. |
-| Deep Learning | Teilgebiet von ML mit mehrschichtigen neuronalen Netzen. | Bilderkennung in einer Qualitätskontrolle. |
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 11pt;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Begriff</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Kurzdefinition</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Beispiel aus Alltag oder Wirtschaft</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">KI</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Oberbegriff für Systeme, die Aufgaben mit intelligentem Verhalten lösen.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Chatbot im Kundenservice beantwortet Standardanfragen.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Machine Learning</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Teilgebiet der KI: Modelle lernen Muster aus Daten statt nur fester Regeln.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Spamfilter lernt aus markierten E-Mails.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Deep Learning</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Teilgebiet von ML mit mehrschichtigen neuronalen Netzen.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Bilderkennung in einer Qualitätskontrolle.</td>
+    </tr>
+  </tbody>
+</table>
 
 Punktevergabe:
 - Pro Zeile 2 Punkte: 1 Punkt Definition, 1 Punkt passendes Beispiel.

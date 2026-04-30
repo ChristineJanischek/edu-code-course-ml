@@ -14,19 +14,61 @@
 
 Erkläre folgende Begriffe und gib zu jedem ein Beispiel:
 
-| Begriff | Erklärung | Beispiel |
-|---|---|---|
-| KI |  |  |
-| Maschinenelles Lernen |  |  |
-| Tiefe Netze |  |  |
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 11pt;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Begriff</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Erklärung</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Beispiel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">KI</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Maschinenelles Lernen</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Tiefe Netze</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+  </tbody>
+</table>
 
 Musterlösung:
 
-| Begriff | Erklärung | Beispiel |
-|---|---|---|
-| KI | Übergeordnetes Konzept für Maschinen, die Aufgaben intelligent lösen oder sich verhalten. | Automatische Fehlerdiagnose in Fabriken. |
-| Maschinenelles Lernen | Teilbereich der KI, bei dem Algorithmen aus Beispieldaten automatisch Regeln ableiten. | Kreditvergabe-Entscheidungen basierend auf historischen Kreditnehmer-Daten. |
-| Tiefe Netze | Neuronale Netze mit vielen Schichten, die komplexe, nichtlineare Muster lernen. | Automatische Handschrifterkennung bei Posteingangsblöcken. |
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 11pt;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Begriff</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Erklärung</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Beispiel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">KI</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Übergeordnetes Konzept für Maschinen, die Aufgaben intelligent lösen oder sich verhalten.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Automatische Fehlerdiagnose in Fabriken.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Maschinenelles Lernen</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Teilbereich der KI, bei dem Algorithmen aus Beispieldaten automatisch Regeln ableiten.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Kreditvergabe-Entscheidungen basierend auf historischen Kreditnehmer-Daten.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Tiefe Netze</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Neuronale Netze mit vielen Schichten, die komplexe, nichtlineare Muster lernen.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Automatische Handschrifterkennung bei Posteingangsblöcken.</td>
+    </tr>
+  </tbody>
+</table>
 
 Punktevergabe:
 - Pro Zeile 2 Punkte: 1 Punkt Erklärung, 1 Punkt Beispiel.

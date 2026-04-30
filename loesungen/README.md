@@ -27,3 +27,19 @@ loesungen/
 - Jede Loesung ist einer Aufgabe in `../aufgaben/` eindeutig zugeordnet.
 - Die Loesungen koennen fuer formative Rueckmeldung und differenzierte Hilfestellung genutzt werden.
 - Bewertungsraster und Kompetenzziele sind im Marschplan dokumentiert.
+
+## Word-kopierbares Layout
+
+- Fuer Loesungsdokumente denselben Layout-Standard wie bei Tests nutzen.
+- Tabellen bevorzugt als HTML-Tabellen mit sichtbaren Rahmen anlegen, damit Copy/Paste nach Word stabil bleibt.
+- Nach Aenderungen normalisieren:
+
+```bash
+python3 scripts/format_tests.py
+```
+
+- Nur Loesungen normalisieren:
+
+```bash
+python3 scripts/format_tests.py loesungen/**/*.md
+```

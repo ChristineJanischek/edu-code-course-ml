@@ -14,19 +14,61 @@
 
 Ordne folgende Begriffe den Beschreibungen zu und nenne jeweils ein Beispiel:
 
-| Konzept | Kurze Erklärung | Beispiel aus Alltag oder Industrie |
-|---|---|---|
-| Künstliche Intelligenz |  |  |
-| Machine Learning |  |  |
-| Neuronale Netze |  |  |
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 11pt;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Konzept</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Kurze Erklärung</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Beispiel aus Alltag oder Industrie</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Künstliche Intelligenz</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Machine Learning</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Neuronale Netze</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;"></td>
+    </tr>
+  </tbody>
+</table>
 
 Musterlösung:
 
-| Konzept | Kurze Erklärung | Beispiel aus Alltag oder Industrie |
-|---|---|---|
-| Künstliche Intelligenz | Oberbegriff für intelligente Maschinen, die Probleme lösen und Entscheidungen treffen. | Autonome Fahrzeuge navigieren eigenständig im Strassenverkehr. |
-| Machine Learning | Teilgebiet der KI: Systeme lernen Muster aus Trainingsdaten statt vorherzuprogrammierter Regeln. | Empfehlungssystem, das Filme basierend auf Zuschaür-Verhalten vorschlägt. |
-| Neuronale Netze | Tiefer liegende ML-Methode mit verschachtelten Schichten, inspiriert von Gehirn-Struktur. | Spracherkennung in Smartphones, die gesprochene Befehle in Text konvertiert. |
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 11pt;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Konzept</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Kurze Erklärung</th>
+      <th style="border: 1px solid #000000; padding: 6px 10px; background-color: #dde3ea; text-align: left; font-weight: bold;">Beispiel aus Alltag oder Industrie</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Künstliche Intelligenz</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Oberbegriff für intelligente Maschinen, die Probleme lösen und Entscheidungen treffen.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Autonome Fahrzeuge navigieren eigenständig im Strassenverkehr.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Machine Learning</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Teilgebiet der KI: Systeme lernen Muster aus Trainingsdaten statt vorherzuprogrammierter Regeln.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Empfehlungssystem, das Filme basierend auf Zuschaür-Verhalten vorschlägt.</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Neuronale Netze</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Tiefer liegende ML-Methode mit verschachtelten Schichten, inspiriert von Gehirn-Struktur.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Spracherkennung in Smartphones, die gesprochene Befehle in Text konvertiert.</td>
+    </tr>
+  </tbody>
+</table>
 
 Punktevergabe:
 - Pro Zeile 2 Punkte: 1 Punkt Erklärung, 1 Punkt passendes Beispiel.
