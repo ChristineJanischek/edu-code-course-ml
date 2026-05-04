@@ -7,7 +7,10 @@ Dieses Verzeichnis enthaelt die praktischen Kursnotebooks fuer BPE 6 und BPE 7.
 ```
 notebooks/
 ├── daten/
-│   └── haeuser.csv
+│   ├── auto_preise.csv
+│   ├── haeuser.csv
+│   ├── studierende_noten.csv
+│   └── wetter_daten.csv
 ├── 00_projektstruktur_analyse.ipynb
 ├── 01_einfuehrung.ipynb
 ├── 02_daten_erkunden.ipynb
