@@ -1,0 +1,113 @@
+{
+  "mvp_ui": {
+    "breakpoints": {
+      "mobile": "0-767",
+      "tablet": "768-1023",
+      "desktop": "1024+"
+    },
+    "routes": [
+      {
+        "path": "/login",
+        "name": "Login",
+        "components": [
+          "BrandHeader",
+          "LoginForm"
+        ]
+      },
+      {
+        "path": "/courses",
+        "name": "CourseOverview",
+        "components": [
+          "TopNav",
+          "CourseCardGrid",
+          "ProgressBadge"
+        ]
+      },
+      {
+        "path": "/courses/:courseId/lessons/:lessonId",
+        "name": "CoursePlayer",
+        "components": [
+          "TopNav",
+          "LeftPanelTabs",
+          "StepList",
+          "FundamentalsPanel",
+          "EditorTabs",
+          "CodeEditor",
+          "CheckOutputPanel",
+          "BottomActionBar"
+        ],
+        "layout": {
+          "desktop": {
+            "grid_columns": [
+              "320px",
+              "1fr"
+            ],
+            "left_panel_tabs": [
+              "Anleitung",
+              "Fundamentals"
+            ],
+            "right_panel_regions": [
+              "EditorTabs",
+              "CodeEditor",
+              "CheckOutput",
+              "ActionBar"
+            ]
+          },
+          "tablet": {
+            "grid_columns": [
+              "280px",
+              "1fr"
+            ],
+            "collapsible_left_panel": true
+          },
+          "mobile": {
+            "left_panel_as_drawer": true,
+            "editor_fullscreen_toggle": true,
+            "check_output_bottom_sheet": true
+          }
+        },
+        "actions": [
+          {
+            "id": "check",
+            "label": "Check",
+            "enabled_when": "step type is code or quiz"
+          },
+          {
+            "id": "next",
+            "label": "Weiter",
+            "enabled_when": "step passed"
+          },
+          {
+            "id": "hint",
+            "label": "Hinweis",
+            "enabled_when": "always"
+          }
+        ]
+      },
+      {
+        "path": "/teacher/classes/:classId",
+        "name": "TeacherDashboard",
+        "components": [
+          "TopNav",
+          "FilterBar",
+          "StudentProgressTable",
+          "ManualUnlockDialog",
+          "ExportCsvButton"
+        ]
+      }
+    ],
+    "state_model": {
+      "course_player": {
+        "active_step_id": "string",
+        "active_left_tab": "anleitung|fundamentals",
+        "open_file_paths": [
+          "string"
+        ],
+        "active_file_path": "string",
+        "check_status": "idle|running|passed|failed",
+        "attempt_count": "number",
+        "hint_level": "0|1|2|3"
+      }
+    }
+  }
+}

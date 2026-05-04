@@ -1,0 +1,142 @@
+{
+  "lesson_id": "a1_kursstart_python_basis",
+  "title": "A1 Kursstart: KI Begriffe und erster Python Workflow",
+  "module": "A1",
+  "version": "1.0.0",
+  "estimated_minutes": 45,
+  "prerequisites": [],
+  "learning_goals": [
+    "KI, Machine Learning und Deep Learning sicher unterscheiden",
+    "Einen CSV Datensatz mit pandas laden und Basiswerte berechnen",
+    "Die Begriffe Feature, Label, Training und Testdaten anwenden"
+  ],
+  "steps": [
+    {
+      "step_id": "a1_s1_quiz_grundbegriffe",
+      "order": 1,
+      "type": "quiz",
+      "title": "Grundbegriffe pruefen",
+      "instruction_markdown": "Beantworte die Multiple-Choice-Fragen zu KI, Machine Learning und Deep Learning. Du benoetigst mindestens 70 Prozent.",
+      "fundamentals_markdown": "KI ist der Oberbegriff. Machine Learning ist ein Teilgebiet von KI. Deep Learning ist ein Teilgebiet von Machine Learning mit tiefen neuronalen Netzen.",
+      "quiz": {
+        "min_score": 0.7,
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "Welche Aussage ist korrekt?",
+            "multiple": false,
+            "options": [
+              {
+                "id": "a",
+                "text": "Machine Learning ist groesser als KI"
+              },
+              {
+                "id": "b",
+                "text": "Deep Learning ist ein Teil von Machine Learning"
+              },
+              {
+                "id": "c",
+                "text": "KI und Deep Learning sind identisch"
+              }
+            ],
+            "correct_option_ids": [
+              "b"
+            ],
+            "explanation": "Deep Learning ist ein Teilgebiet von Machine Learning."
+          },
+          {
+            "id": "q2",
+            "prompt": "Was ist in einem Hauspreisbeispiel typischerweise das Label?",
+            "multiple": false,
+            "options": [
+              {
+                "id": "a",
+                "text": "Zimmeranzahl"
+              },
+              {
+                "id": "b",
+                "text": "Baujahr"
+              },
+              {
+                "id": "c",
+                "text": "preis_euro"
+              }
+            ],
+            "correct_option_ids": [
+              "c"
+            ],
+            "explanation": "Das Label ist der Zielwert, den das Modell vorhersagen soll."
+          }
+        ]
+      },
+      "hints": {
+        "level_1": "Denke in Hierarchien: KI > ML > Deep Learning.",
+        "level_2": "Das Label ist die Zielspalte in einem ueberwachten Lernproblem.",
+        "level_3": "Beim Hauspreis ist das Label in der Regel preis_euro."
+      }
+    },
+    {
+      "step_id": "a1_s2_code_csv_laden",
+      "order": 2,
+      "type": "code",
+      "title": "CSV laden und erste Analyse",
+      "instruction_markdown": "Ergaenze den Code so, dass der Datensatz geladen wird und die ersten 5 Zeilen ausgegeben werden. Berechne danach Mittelwert, Minimum und Maximum der Spalte preis_euro.",
+      "fundamentals_markdown": "pandas.read_csv liest CSV Dateien. head(5) zeigt die ersten Datensaetze. mean, min, max liefern einfache Kennzahlen fuer numerische Spalten.",
+      "files": [
+        {
+          "path": "student/main.py",
+          "language": "python",
+          "initial_content": "import pandas as pd\n\n# TODO 1: CSV laden\n# Hinweis: Pfad ist notebooks/daten/haeuser.csv\n\n# TODO 2: Erste 5 Zeilen anzeigen\n\n# TODO 3: Kennzahlen fuer preis_euro berechnen\n# mean_preis = ...\n# min_preis = ...\n# max_preis = ...\n\nprint(\"fertig\")\n"
+        },
+        {
+          "path": "notebooks/daten/haeuser.csv",
+          "language": "text",
+          "initial_content": "",
+          "readonly": true
+        }
+      ],
+      "check": {
+        "runner_image": "edu-python-runner:1.0",
+        "command": "pytest -q tests/01_grundlagen/test_aufgabe_01.py",
+        "timeout_seconds": 20,
+        "network_enabled": false,
+        "pass_criteria": {
+          "min_score": 1.0,
+          "required_tests": [
+            "test_datei_vorhanden",
+            "test_spalten_vorhanden",
+            "test_datensatz_nicht_leer",
+            "test_keine_negativen_preise",
+            "test_durchschnittspreis_berechnung"
+          ]
+        }
+      },
+      "hints": {
+        "level_1": "Beginne mit import pandas as pd und pd.read_csv.",
+        "level_2": "Pruefe den Dateipfad exakt: notebooks/daten/haeuser.csv.",
+        "level_3": "Nutze df[\"preis_euro\"].mean(), .min() und .max()."
+      },
+      "unlock": {
+        "requires_step_id": "a1_s1_quiz_grundbegriffe",
+        "requires_passed": true
+      }
+    },
+    {
+      "step_id": "a1_s3_reflexion",
+      "order": 3,
+      "type": "reflection",
+      "title": "Kurzreflexion",
+      "instruction_markdown": "Notiere in 2 bis 3 Saetzen: Was war leicht, was war schwierig und welche Hilfe war fuer dich am wertvollsten?",
+      "fundamentals_markdown": "Reflexion stabilisiert Lernfortschritt und hilft bei der Planung der naechsten Lerneinheit.",
+      "hints": {
+        "level_1": "Beziehe dich auf einen konkreten Arbeitsschritt.",
+        "level_2": "Nenne eine Stelle, an der du einen Fehler korrigiert hast.",
+        "level_3": "Formuliere eine konkrete Lernstrategie fuer die naechste Aufgabe."
+      },
+      "unlock": {
+        "requires_step_id": "a1_s2_code_csv_laden",
+        "requires_passed": true
+      }
+    }
+  ]
+}

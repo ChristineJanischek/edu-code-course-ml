@@ -1,0 +1,352 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://edu-code-course-ml.local/schemas/lesson.schema.json",
+  "title": "Online Course Lesson",
+  "type": "object",
+  "required": [
+    "lesson_id",
+    "title",
+    "module",
+    "estimated_minutes",
+    "learning_goals",
+    "steps"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "lesson_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_\\-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "module": {
+      "type": "string",
+      "pattern": "^[AB][1-4]$"
+    },
+    "version": {
+      "type": "string",
+      "default": "1.0.0"
+    },
+    "estimated_minutes": {
+      "type": "integer",
+      "minimum": 5,
+      "maximum": 180
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "learning_goals": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 5
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/step"
+      }
+    }
+  },
+  "$defs": {
+    "step": {
+      "type": "object",
+      "required": [
+        "step_id",
+        "order",
+        "type",
+        "title",
+        "instruction_markdown",
+        "fundamentals_markdown",
+        "hints"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "step_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_\\-]+$"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "code",
+            "quiz",
+            "reflection"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "instruction_markdown": {
+          "type": "string",
+          "minLength": 10
+        },
+        "fundamentals_markdown": {
+          "type": "string",
+          "minLength": 10
+        },
+        "files": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/file_template"
+          }
+        },
+        "check": {
+          "$ref": "#/$defs/check"
+        },
+        "quiz": {
+          "$ref": "#/$defs/quiz"
+        },
+        "hints": {
+          "$ref": "#/$defs/hints"
+        },
+        "unlock": {
+          "$ref": "#/$defs/unlock"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "code"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "files",
+              "check"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "quiz"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "quiz"
+            ]
+          }
+        }
+      ]
+    },
+    "file_template": {
+      "type": "object",
+      "required": [
+        "path",
+        "language",
+        "initial_content"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 3
+        },
+        "language": {
+          "type": "string",
+          "enum": [
+            "python",
+            "markdown",
+            "text",
+            "json",
+            "yaml"
+          ]
+        },
+        "initial_content": {
+          "type": "string"
+        },
+        "readonly": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "check": {
+      "type": "object",
+      "required": [
+        "runner_image",
+        "command",
+        "timeout_seconds",
+        "pass_criteria"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "runner_image": {
+          "type": "string",
+          "minLength": 3
+        },
+        "command": {
+          "type": "string",
+          "minLength": 3
+        },
+        "timeout_seconds": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 120
+        },
+        "network_enabled": {
+          "type": "boolean",
+          "default": false
+        },
+        "pass_criteria": {
+          "type": "object",
+          "required": [
+            "min_score",
+            "required_tests"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "min_score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "required_tests": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "quiz": {
+      "type": "object",
+      "required": [
+        "min_score",
+        "questions"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "min_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "questions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/question"
+          }
+        }
+      }
+    },
+    "question": {
+      "type": "object",
+      "required": [
+        "id",
+        "prompt",
+        "multiple",
+        "options",
+        "correct_option_ids",
+        "explanation"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_\\-]+$"
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 5
+        },
+        "multiple": {
+          "type": "boolean"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9_\\-]+$"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "correct_option_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 5
+        }
+      }
+    },
+    "hints": {
+      "type": "object",
+      "required": [
+        "level_1",
+        "level_2",
+        "level_3"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "level_1": {
+          "type": "string",
+          "minLength": 5
+        },
+        "level_2": {
+          "type": "string",
+          "minLength": 5
+        },
+        "level_3": {
+          "type": "string",
+          "minLength": 5
+        }
+      }
+    },
+    "unlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requires_step_id": {
+          "type": "string"
+        },
+        "requires_passed": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  }
+}

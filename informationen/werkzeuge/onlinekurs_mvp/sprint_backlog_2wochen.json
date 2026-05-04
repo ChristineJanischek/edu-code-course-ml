@@ -1,0 +1,194 @@
+{
+  "sprint": {
+    "name": "MVP Sprint 1",
+    "duration_days": 10,
+    "goal": "End-to-end Pilot fuer A1 mit Login, Kursplayer, Code-Check und Quiz",
+    "definition_of_done": [
+      "Ein Schueler kann A1 Step 1 bis 3 erfolgreich durchlaufen",
+      "Check Engine gibt bestanden/nicht bestanden plus Hinweise aus",
+      "Lehrkraft kann Fortschritt pro Schueler einsehen",
+      "Deployment in Testumgebung verfuegbar"
+    ],
+    "tickets": [
+      {
+        "id": "MVP-001",
+        "title": "Content Schema und Validator",
+        "priority": "P0",
+        "estimate_story_points": 5,
+        "owner_role": "Backend",
+        "acceptance_criteria": [
+          "lesson.schema.json wird in API eingebunden",
+          "Ungueltige Lesson Dateien erzeugen 400 Fehler",
+          "Validierungsfehler enthalten Feldpfad und Grund"
+        ],
+        "dependencies": []
+      },
+      {
+        "id": "MVP-002",
+        "title": "A1 Pilot Lesson integrieren",
+        "priority": "P0",
+        "estimate_story_points": 3,
+        "owner_role": "Content",
+        "acceptance_criteria": [
+          "Lesson a1_kursstart_python_basis ist ladbar",
+          "Alle Step-Texte werden korrekt gerendert",
+          "Quizfragen erscheinen in definierter Reihenfolge"
+        ],
+        "dependencies": [
+          "MVP-001"
+        ]
+      },
+      {
+        "id": "MVP-003",
+        "title": "Login und Session Handling",
+        "priority": "P0",
+        "estimate_story_points": 5,
+        "owner_role": "Backend",
+        "acceptance_criteria": [
+          "Login API liefert JWT oder Session Cookie",
+          "Geschuetzte Routen ohne Login blockiert",
+          "Logout beendet Session sauber"
+        ],
+        "dependencies": []
+      },
+      {
+        "id": "MVP-004",
+        "title": "Course Player Layout",
+        "priority": "P0",
+        "estimate_story_points": 8,
+        "owner_role": "Frontend",
+        "acceptance_criteria": [
+          "Links Tabs Anleitung/Fundamentals vorhanden",
+          "Rechts Editorbereich mit Dateireitern",
+          "Bottom Action Bar mit Check/Weiter/Hinweis"
+        ],
+        "dependencies": [
+          "MVP-002"
+        ]
+      },
+      {
+        "id": "MVP-005",
+        "title": "Autosave fuer Editor",
+        "priority": "P1",
+        "estimate_story_points": 3,
+        "owner_role": "Frontend",
+        "acceptance_criteria": [
+          "Speichern alle 5 Sekunden bei Aenderung",
+          "Reload stellt letzten Stand wieder her",
+          "Fehlerstatus bei Save-Problemen sichtbar"
+        ],
+        "dependencies": [
+          "MVP-004"
+        ]
+      },
+      {
+        "id": "MVP-006",
+        "title": "Runner Service mit Sandbox",
+        "priority": "P0",
+        "estimate_story_points": 8,
+        "owner_role": "Platform",
+        "acceptance_criteria": [
+          "Container startet pro Check Run isoliert",
+          "Timeout und Ressourcenlimits aktiv",
+          "Kein Netzwerkzugriff waehrend Check"
+        ],
+        "dependencies": []
+      },
+      {
+        "id": "MVP-007",
+        "title": "Check API und Ergebnisformat",
+        "priority": "P0",
+        "estimate_story_points": 5,
+        "owner_role": "Backend",
+        "acceptance_criteria": [
+          "POST /checks/run startet Run",
+          "GET /checks/{id} liefert status, score, feedback",
+          "Feedback enthaelt mindestens einen konkreten Hinweis"
+        ],
+        "dependencies": [
+          "MVP-006",
+          "MVP-001"
+        ]
+      },
+      {
+        "id": "MVP-008",
+        "title": "Quiz Engine",
+        "priority": "P0",
+        "estimate_story_points": 5,
+        "owner_role": "Backend",
+        "acceptance_criteria": [
+          "Single und Multiple Choice werden bewertet",
+          "Bestehensgrenze aus Lesson wird angewendet",
+          "Antworterklaerungen werden angezeigt"
+        ],
+        "dependencies": [
+          "MVP-002"
+        ]
+      },
+      {
+        "id": "MVP-009",
+        "title": "Unlock Logik fuer naechsten Step",
+        "priority": "P0",
+        "estimate_story_points": 3,
+        "owner_role": "Backend",
+        "acceptance_criteria": [
+          "Step n+1 erst nach bestandenem Step n",
+          "Lehrkraft kann manuell freischalten",
+          "Unlock-Ereignis wird protokolliert"
+        ],
+        "dependencies": [
+          "MVP-007",
+          "MVP-008"
+        ]
+      },
+      {
+        "id": "MVP-010",
+        "title": "Teacher Dashboard Minimal",
+        "priority": "P1",
+        "estimate_story_points": 5,
+        "owner_role": "Frontend",
+        "acceptance_criteria": [
+          "Liste mit Schuelerstatus pro Step",
+          "Filter nach Klasse und Lesson",
+          "CSV Export mit Fortschritt"
+        ],
+        "dependencies": [
+          "MVP-009"
+        ]
+      },
+      {
+        "id": "MVP-011",
+        "title": "Responsive Optimierung",
+        "priority": "P1",
+        "estimate_story_points": 3,
+        "owner_role": "Frontend",
+        "acceptance_criteria": [
+          "Mobile Drawer fuer linke Spalte",
+          "Theorie und Quiz auf 390px nutzbar",
+          "Editor Vollbildmodus auf Mobile verfuegbar"
+        ],
+        "dependencies": [
+          "MVP-004"
+        ]
+      },
+      {
+        "id": "MVP-012",
+        "title": "E2E Test und Pilotfreigabe",
+        "priority": "P0",
+        "estimate_story_points": 5,
+        "owner_role": "QA",
+        "acceptance_criteria": [
+          "E2E Test deckt kompletten A1 Flow ab",
+          "Mindestens 20 Check Runs parallel stabil",
+          "Known Issues dokumentiert und bewertet"
+        ],
+        "dependencies": [
+          "MVP-004",
+          "MVP-007",
+          "MVP-008",
+          "MVP-009"
+        ]
+      }
+    ]
+  }
+}
