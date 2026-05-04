@@ -60,7 +60,7 @@ Musterlösung:
     <tr>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Machine Learning</td>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Teilgebiet der KI: Systeme lernen Muster aus Trainingsdaten statt vorherzuprogrammierter Regeln.</td>
-      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Empfehlungssystem, das Filme basierend auf Zuschaür-Verhalten vorschlägt.</td>
+      <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Empfehlungssystem, das Filme basierend auf Zuschauer-Verhalten vorschlägt.</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000000; padding: 6px 10px; text-align: left; vertical-align: top;">Neuronale Netze</td>
@@ -86,8 +86,8 @@ Punktevergabe:
 
 Musterlösung:
 
-1. Fest programmierte Systeme folgen vorgegebenen Regeln und verändern sich nicht. Lernende Systeme passen sich basierend auf neün Daten an und verbessern ihre Vorhersagen oder Entscheidungen über die Zeit. Programmierte Systeme sind überall gleich, lernende Systeme werdan durch ihre Daten "geformt".
-2. Fest programmiert: Taschenrechner berechnet 2+3 immer gleich. Lernend: Spam-Filter passt sich an neü Spam-Muster an.
+1. Fest programmierte Systeme folgen vorgegebenen Regeln und verändern sich nicht. Lernende Systeme passen sich basierend auf neuen Daten an und verbessern ihre Vorhersagen oder Entscheidungen über die Zeit. Programmierte Systeme sind überall gleich, lernende Systeme werden durch ihre Daten "geformt".
+2. Fest programmiert: Taschenrechner berechnet 2+3 immer gleich. Lernend: Spam-Filter passt sich an neue Spam-Muster an.
 
 Punktevergabe:
 - 2 Punkte: Unterschied klar erklärt (Regeln vs. Lernen).
@@ -109,16 +109,16 @@ Arbeite mit dem Kontext: Ein Unternehmen möchte die Restwertpreise von Autos vo
 
 Musterlösung:
 
-1. Die Aufteilung prüft, ob das Modell wirklich generalisieren kann und nicht nur die Trainingsbeispiele "auswendig lernt". Mit separaten Testdaten kann man objektiv bewerten, wie gut das Modell auf neün, unbekannten Auto-Daten funktioniert.
+1. Die Aufteilung prüft, ob das Modell wirklich generalisieren kann und nicht nur die Trainingsbeispiele "auswendig lernt". Mit separaten Testdaten kann man objektiv bewerten, wie gut das Modell auf neuen, unbekannten Auto-Daten funktioniert.
 
-2. labeled Data: Auto-Datensätze mit Eingaben (Alter, KM, PS) UND bekanntem Zielwert (aktüller Preis). unlabeled Data: Auto-Informationen ohne bekannte Preise – das Modell könnte diese später vorhersagen.
+2. labeled Data: Auto-Datensätze mit Eingaben (Alter, KM, PS) UND bekanntem Zielwert (aktueller Preis). unlabeled Data: Auto-Informationen ohne bekannte Preise – das Modell könnte diese später vorhersagen.
 
 3. Wenn Testdaten bei Training "mitgelernt" werden, entsteht ein Informationsleck: Das Modell kennt die richtige Antwort bereits. Die Testergebnisse wären viel zu positiv und unrealistisch, sodass man nicht weiss, wie gut das Modell wirklich ist.
 
 Punktevergabe:
-- 2 Punkte: Gute Begründung (Prüfung auf Generaliserung).
+- 2 Punkte: Gute Begründung (Prüfung auf Generalisierung).
 - 2 Punkte: Klare Definition labeled/unlabeled mit Auto-Kontext.
-- 1,5 Punkte: Korrekte Antwort zu Data Leakage und Konseqünzen.
+- 1,5 Punkte: Korrekte Antwort zu Data Leakage und Konsequenzen.
 
 </div>
 
@@ -136,12 +136,12 @@ Begründe in 4-6 Sätzen, welche Auswirkungen Datenmenge und Datenqualität (z. 
 
 Musterlösung:
 
-- Mit nur 25 Datensätzen ist das Modell anfällig für Überanpassung und Unstäbilkeit. Mit 500 Datensätzen erfasst das Modell wahrscheinlich mehr Variation in Auto-Preisen und generalisiert besser.
+- Mit nur 25 Datensätzen ist das Modell anfällig für Überanpassung und Instabilität. Mit 500 Datensätzen erfasst das Modell wahrscheinlich mehr Variation in Auto-Preisen und generalisiert besser.
 - Fehlerhafte KM-Angaben (z. B. vertauschte Dezimalstellen) verzerren Vorhersagen. Schlechte Datenqualität kann MSE erhöhen und R2 verringern, selbst bei grosser Datenmenge.
 - Daher ist es entscheidend, sowohl ausreichend Daten als auch saubere Daten zu haben.
 
 Punktevergabe:
-- 1 Punkt: Einfluss der Menge (mehr Daten → bessere Generaliserung).
+- 1 Punkt: Einfluss der Menge (mehr Daten → bessere Generalisierung).
 - 1 Punkt: Einfluss der Qualität (Fehler → schlechtere Vorhersagen).
 - 1 Punkt: Bezug zu MSE/R2 oder klare Auswirkung nachvollziehbar.
 

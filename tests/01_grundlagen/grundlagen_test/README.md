@@ -8,25 +8,25 @@ Dieses Verzeichnis enthält 4 gleichwertige Test-Versionen (A, B, C, D) für Gru
 - **Test:** [grundlagen_test.md](grundlagen_test.md)
 - **Musterlösung:** [grundlagen_test_musterloesung.md](grundlagen_test_musterloesung.md)
 - **Kontext:** Prognose von Hauspreisen basierend auf Größe, Zimmern, Baujahr
-- **Datenqülle:** haeuser.csv
+- **Datenquelle:** haeuser.csv
 
 ### Version B: Auto-Preise (Fahrzeuge)
 - **Test:** [grundlagen_test_b.md](grundlagen_test_b.md)
 - **Musterlösung:** [grundlagen_test_b_musterloesung.md](grundlagen_test_b_musterloesung.md)
 - **Kontext:** Restwertprognose von Autos basierend auf Alter, KM-Stand, PS
-- **Datenqülle:** auto_preise.csv
+- **Datenquelle:** auto_preise.csv
 
 ### Version C: Wetter-Vorhersage
 - **Test:** [grundlagen_test_c.md](grundlagen_test_c.md)
 - **Musterlösung:** [grundlagen_test_c_musterloesung.md](grundlagen_test_c_musterloesung.md)
 - **Kontext:** Tagestemperatur-Prognose basierend auf Min-Temp, Luftfeuchtigkeit, Luftdruck
-- **Datenqülle:** wetter_daten.csv
+- **Datenquelle:** wetter_daten.csv
 
 ### Version D: Studierenden-Noten-Vorhersage
 - **Test:** [grundlagen_test_d.md](grundlagen_test_d.md)
 - **Musterlösung:** [grundlagen_test_d_musterloesung.md](grundlagen_test_d_musterloesung.md)
 - **Kontext:** Notenprognose basierend auf Lernstunden, Anwesenheit, bearbeitete Übungen
-- **Datenqülle:** studierende_noten.csv
+- **Datenquelle:** studierende_noten.csv
 
 ---
 

@@ -83,7 +83,7 @@ Ein Team testet ein Regressionsmodell zweimal:
 - Experiment 1: 25 Auto-Datensätze
 - Experiment 2: 500 Auto-Datensätze
 
-Begründe in 4-6 Sätzen, welche Auswirkungen Datenmenge und Datenqualität (z. B. fehlerhafte KM-Angaben) auf Die Vorhersagegüte haben können. (3 Punkte)
+Begründe in 4-6 Sätzen, welche Auswirkungen Datenmenge und Datenqualität (z. B. fehlerhafte KM-Angaben) auf die Vorhersagegüte haben können. (3 Punkte)
 
 <div style="background-color: #f6f8fa; padding: 10px 12px; border-radius: 6px; border: 1px solid #e1e4e8;">
 **Antwort:**

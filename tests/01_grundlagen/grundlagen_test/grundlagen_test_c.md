@@ -50,7 +50,7 @@ Bewertung:
 
 ### Aufgabe A2: Algorithmen und Daten (3 Punkte)
 
-1. Erkläre in 3-5 Sätzen den Unterschied zwischen einem regelgesteürten System und einem datengetriebenen Modell. (2 Punkte)
+1. Erkläre in 3-5 Sätzen den Unterschied zwischen einem regelgesteuerten System und einem datengetriebenen Modell. (2 Punkte)
 2. Gib für jede Methode ein Beispiel aus dem Bereich Wetter/Klima. (1 Punkt)
 
 <div style="background-color: #f6f8fa; padding: 10px 12px; border-radius: 6px; border: 1px solid #e1e4e8;">

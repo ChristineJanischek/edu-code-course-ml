@@ -81,14 +81,14 @@ Punktevergabe:
 **Aufgabenstellung:**
 
 
-1. Erkläre in 3-5 Sätzen den Unterschied zwischen einem regelgesteürten System und einem datengetriebenen Modell. (2 Punkte)
+1. Erkläre in 3-5 Sätzen den Unterschied zwischen einem regelgesteuerten System und einem datengetriebenen Modell. (2 Punkte)
 2. Gib für jede Methode ein Beispiel aus dem Bereich Wetter/Klima. (1 Punkt)
 
 Musterlösung:
 
-1. Regelgesteürte Systeme basieren auf vordefinierten Wenn-Dann-Regeln, die Programmierer schreiben. Sie sind stärr und verändern sich nicht. Datengetriebene Modelle beobachten Muster in Daten und passen sich an. Sie können neü Situations erkennern, die ursprünglich nicht geprogrammiert waren.
+1. Regelgesteuerte Systeme basieren auf vordefinierten Wenn-Dann-Regeln, die Programmierer schreiben. Sie sind starr und verändern sich nicht. Datengetriebene Modelle beobachten Muster in Daten und passen sich an. Sie können neue Situationen erkennen, die ursprünglich nicht programmiert waren.
 
-2. Regelgesteürt: "Wenn Temperatur unter 0°C, dann Frostwarnung ausgeben." Datengetrieben: Ein Modell lernt aus 10 Jahren Wetterdaten, wann eine Sturmönde wahrscheinlich ist.
+2. Regelgesteuert: "Wenn Temperatur unter 0°C, dann Frostwarnung ausgeben." Datengetrieben: Ein Modell lernt aus 10 Jahren Wetterdaten, wann ein Sturm wahrscheinlich ist.
 
 Punktevergabe:
 - 2 Punkte: Unterschied klar erklärt (Regeln vs. Muster/Lernen).
@@ -110,14 +110,14 @@ Kontext: Ein Wetter-Modell soll Tageshöchsttemperaturen vorhersagen (Min-Temp, 
 
 Musterlösung:
 
-1. Die Aufteilung prüft, ob das Modell generalisieren kann. Trainingsdaten lehren das Modell, Testdaten prüfen, wie gut es auf neün Wetterdaten funktioniert, die es noch nicht gesehen hat. Ohne Trennung weiss man nicht, ob das Modell wirklich vorhersagen kann oder nur die Trainingsfälle auswendig lernt.
+1. Die Aufteilung prüft, ob das Modell generalisieren kann. Trainingsdaten lehren das Modell, Testdaten prüfen, wie gut es auf neuen Wetterdaten funktioniert, die es noch nicht gesehen hat. Ohne Trennung weiss man nicht, ob das Modell wirklich vorhersagen kann oder nur die Trainingsfälle auswendig lernt.
 
-2. labeled Data: Wettermessungen mit bekanntem Ergebnis – z. B. (Min-Temp=5°C, Feuchte=70%, Druck=1013) → Max-Temp=18°C. unlabeled Data: Aktülle Messwerte (5°C, 70%, 1013), ohne dass wir die Max-Temp schon kennen – das Modell soll diese vorhersagen.
+2. labeled Data: Wettermessungen mit bekanntem Ergebnis – z. B. (Min-Temp=5°C, Feuchte=70%, Druck=1013) → Max-Temp=18°C. unlabeled Data: Aktuelle Messwerte (5°C, 70%, 1013), ohne dass wir die Max-Temp schon kennen – das Modell soll diese vorhersagen.
 
-3. Information Leakage: Das Modell "kennt" bereits die richtige Antwort bei Testdaten. Die Evaluierung wäre zu positiv (MSE zu niedrig, R2 zu hoch), und man erkennt nicht die echte Vorhersagegüte. Neü, echte Wetterdaten würden dann enttäuschend sein.
+3. Information Leakage: Das Modell "kennt" bereits die richtige Antwort bei Testdaten. Die Evaluierung wäre zu positiv (MSE zu niedrig, R2 zu hoch), und man erkennt nicht die echte Vorhersagegüte. Neue, echte Wetterdaten würden dann enttäuschend sein.
 
 Punktevergabe:
-- 2 Punkte: Gute Erklärung für die Aufteilung (Generaliserung testen).
+- 2 Punkte: Gute Erklärung für die Aufteilung (Generalisierung testen).
 - 2 Punkte: klare Definition + Beispiel labeled/unlabeled Daten im Wetter-Kontext.
 - 1,5 Punkte: Klare Erklärung der Folge (falsch positive Metriken, Data Leakage).
 
@@ -138,8 +138,8 @@ Begründe in 5-7 Sätzen, wie Datenmenge (temporal/volumenmässig) und Messfehle
 Musterlösung:
 
 - 50 Messwerte über einen Monat erfassen nur ein Zeitfenster, nicht saisonale Muster. Das Modell verallgemeinert schlecht.
-- 1000 Messwerte über ein Jahr zergeben Variation durch Jahreszeiten und zeigen echte Muster. Das Modell kann besser generalisieren, MSE sinkt, R2 steigt.
-- Defekte Sensoren erzeugen fehlerhafte Min-Temps oder Feuchteangaben. Diese Fehler verzerren das Training, erhöhen MSE undkönnen R2 verringern, auch wenn viel Daten vorhanden ist.
+- 1000 Messwerte über ein Jahr ergeben Variation durch Jahreszeiten und zeigen echte Muster. Das Modell kann besser generalisieren, MSE sinkt, R2 steigt.
+- Defekte Sensoren erzeugen fehlerhafte Min-Temps oder Feuchteangaben. Diese Fehler verzerren das Training, erhöhen MSE und können R2 verringern, auch wenn viel Daten vorhanden ist.
 - Eine grosse, aber schmutzige Datenmenge ist weniger wertvoll als kleinere, saubere Daten.
 
 Punktevergabe:
