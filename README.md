@@ -105,3 +105,14 @@ Kurzregel:
 Technische Repo-Verwaltung, Template-Nutzung und Pflegehinweise wurden bewusst aus dieser README ausgelagert:
 
 - [informationen/werkzeuge/repo-betrieb-und-template.md](informationen/werkzeuge/repo-betrieb-und-template.md)
+
+<!-- CUSTOM_LICENSE_NOTICE_START -->
+## License
+
+This repository is licensed under a custom license.
+
+- Attribution required: Christine Janischek - https://emotionalspirit.de
+- Non-commercial use only
+- Use only within state school systems
+- Any other use requires explicit prior written permission
+<!-- CUSTOM_LICENSE_NOTICE_END -->
